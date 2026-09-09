@@ -90,8 +90,9 @@ We'll be using different tools in order to work with data and generate statistic
 ## Load the tidyverse
 
 ```{r}
-library(tidyverse)
+install.packages("tidyverse")
 
+library(tidyverse)
 ```
 
 
