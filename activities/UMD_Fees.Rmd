@@ -32,7 +32,7 @@ umd_fees_pct <- umd_fees |> mutate(pct_change = (`Fall 2026`- `Fall 2021`)/`Fall
 ### Task 4: Describe the results
 
 Write a few sentences about what you found in those percentages. What's the story here? What questions do you have?
-
+Since 2021, there was a 25.09% change in total fees when compared to 2026. Of this total percentage, Student Sustainability stood out because there was a 150% percent change. A possible story here would be whether or not students truly experience a beneficial change due to the increase in Student Sustainability fees. Currently, there are little to no public recycling or trash cans around campus. These services are typically found near halls, dorms and other buildings, but not in far-off walkways. A question that I have is what counts as Student Sustainability? Also, why have the fees been sitting at 30 since Fall 2024? With that, how has Student Sustainability improved since Fall 2024?
 
 
 
