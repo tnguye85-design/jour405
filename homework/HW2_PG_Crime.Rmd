@@ -18,30 +18,30 @@ Then you'll load the data from the web. The URL for the data is: https://raw.git
 
 ```{r}
 pg_crime <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/pg_crime_totals_2024.csv")
+
+The crimes that occur the least are Breaking & Entering, Homicide and Residential Robbery. Accidents occur at the highest rate. Theft from Auto, Auto Stolen and Accident with Impound also occur higher than most other categories. Accident incidences have risen, with the lowest incident rate being 429 in March and the highest being 529 in May. 
 ```
 ### Task 3: Describe the Data
 
 You should examine that dataframe carefully by clicking on it in the Environment tab in RStudio. Write a couple of sentences describing the categories of incidents. From a reporting standpoint, are any of the categories more important than others? Why or why not? Do any of them make the job of summarizing the data more difficult? Why or why not?
 
-Accident rates occur more than other categories. No category is specifically more important than others because any crime affecting the local community should be reported on, as they all the local community. However, the amount of accidents make me wonder where these incidents occur. The accident category could also be specified as auto accidents for clarification, but detail doesn't necessarily make summarizing the data different. Since accidents occur more than the other categories, as a reporter, it's worth investigating what is causing them-- traffic violations? Traffic light timing? Pedestrians? Driving under the influence?
+Accident rates occur more than other categories. No category is specifically more important than others because any crime affecting the local community should be reported on, as they all the local community. However, the amount of accidents make me wonder where these incidents occur. The accident category could also be specified as auto accidents for clarification, but detail doesn't necessarily make summarizing the data different. Since accidents occur more than the other categories, as a reporter, it's worth investigating what is causing them-- traffic violations? Traffic light timing? Pedestrians? Driving under the influence? Also, is there correlation between the high rates of accidents with auto theft, accident with impound and auto stolen? 
 
 ### Task 4: Calculating Averages
 
 Add up the total number of incidents per month for each category using `mutate()`, calling the new column `total_incidents`. Then calculate the average number of incidents per month for each category of crime using the total number of months, calling the new column `average_incidents`. Assign the result to a new dataframe called `pg_crime_averages`.
 
 ```{r}
-total_incidents <- 5435 + 1430 + 6429 + 4488 + 2529 + 3463 + 3462 + 3497 + 2465 + 3569 + 2500 + 3509
-average_incidents <- 42776 / 12
-pg_crime_averages <- 3564.67
+pg_crime_totals <- pg_crime |> mutate(total_incidents = Jan + Feb + Mar + Apr + May + Jun + Jul + Aug + Sep + Oct + Nov + Dec)
 
-pg_crime_averages <- pg_crime |> mutate(total_incidents = sum(42776) |> mutate (average_incidents = total_incidents / 12)
+pg_crime_averages <- pg_crime_totals |> mutate(`average_incidents` = `total_incidents` / 12)
 ```
 
 ### Task 5: Describe the Averages
 
 Examine the new dataframe, `pg_crime_averages`, by clicking on it in the Environment tab in RStudio. Write a couple of sentences describing the average number of incidents per month for each category. Which categories have the highest average number of incidents per month? Which have the lowest? What does this tell you about the pattern of crime in Prince George's County? Are there categories that you have questions about? Why or why not?
 
-ANSWER HERE
+On average, the categories with the highest number of incidences per month are accident, auto stolen, theft from auto, accident with impound and theft. The lowest incidences on average are residential robberty (N/A), homicide, breaking and entering (other) and sex offense. Based on the data, auto-related crimes happen at a higher rate than robberies, sexual assault, assault with weapon or breaking and entering. I wonder if the auto-related crimes have any intersection and if there are any locations where the crimes occur more. This also makes me question PGPD's efforts to curb auto-related crimes if there is a specifc location where these occur more. 
 
 
 ### Task 6: Testing a Theory
@@ -49,7 +49,12 @@ ANSWER HERE
 One theory about crime is that it is more likely to occur in the summer months. Test this theory by creating three new columns using `mutate()` that calculate the percentage change compared to the average for each category of crime for the months of June, July, and August. Call the new columns `june_change`, `july_change`, and `august_change`. Assign the result to a new dataframe called `summer_crime_averages`.
 
 ```{r}
-
+summer_crime_averages <- pg_crime_averages |>
+  mutate(
+    june_change = (`Jun` - average_incidents) / average_incidents * 100,
+    july_change = (`Jul` - average_incidents) / average_incidents * 100,
+    august_change = (`Aug` - average_incidents) / average_incidents * 100
+)
 ```
 
 ### Task 7: Describe the Summer Crime Averages
