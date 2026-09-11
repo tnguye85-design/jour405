@@ -61,7 +61,7 @@ summer_crime_averages <- pg_crime_averages |>
 
 Look at the `summer_crime_averages` dataframe by clicking on it in the Environment tab in RStudio. Write a couple of sentences describing the percentage change in the average number of incidents per month for each category of crime for the months of June, July, and August. Do you see any patterns? What does this tell you about the theory that crime is more likely to occur in the summer months?
 
-ANSWER HERE
+Assault shooting crimes show an increase in percent change when comparing the percent change of June (-4.36%) to August (34.04%). Other crimes are relatively similar in percent change, such as accident, which saw its peak in percant change in August at 3.25%, but had a -4.02% change in August and -3.81% in June. The auto-related crimes did not jump as high in percent change compared to assault shooting. In terms of crime being more likely to occur in the summer months, this can be backed by July having the highest percentage changes (e.g., vehicle robbery was at 64.55% in July and 24.41% in June; sex offense at 22.45% in July and 14.29% in June, but -18.37% in August; commericial robbery had a percent change at 43.80% in August, but was at -0.83% in July and -15.70% in June). 
 
 ### Task 8: What's the Story?
 
