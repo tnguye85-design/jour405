@@ -70,7 +70,7 @@ Write up a lede and nutgraf of a story focused on the crime data in Prince Georg
 Auto-related crimes in Prince George's County show an uptick in occurrences compared to other crimes on average, based on an analysis from the Prince George’s County Police Department's crime reports for 2024. 
 
 Accidents occur the highest at 481.33 on average, followed by stolen auto vehicles at 399.17, theft from an auto vehicle at 391.92 and accident with impound at 320.75. Theft occurs at an 284.08 average, assault at 70.92, robberies listed under 'other' at 54.92 and commercial breaking and entering at 44.67 in comparison to auto-related crimes. The frequency of auto crimes signals a public-safety concern for PGC residents.
-
+  
 
 ### Task 9: Save Your Work and Put it on GitHub
 
