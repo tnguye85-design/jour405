@@ -9,6 +9,7 @@ In this assignment, we will be working with a dataset containing information abo
 You will need to load the tidyverse library
 
 ```{r}
+library(tidyverse)
 ```
 
 Then you'll load the data from the web. The URL for the data is: https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/white_house_salaries_2026.csv. You will create a dataframe called `wh_salaries` that contains the data from this URL.
@@ -16,19 +17,22 @@ Then you'll load the data from the web. The URL for the data is: https://raw.git
 ### Task 2: Load the Data and Describe It
 
 ```{r}
+students <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/white_house_salaries_2026.csv")
+
+When looking at the data without its original alphabetical organization, we can see a clear outlier: Jacques Archer, advisor, makes a salary of 0 compared to other employees, who seem to make salaries in the 10,000ths-100,000ths place. The data is categorized by employee names alphabetically, their status (detailee, employee or part-time detailee), salary, pay basis and position title. This makes it easy to sort employees by a specific category from highest or lowest. Everyone has "per annum" below their pay basis, though others are paid higher (e.g., Karoline Leavitt, employee and assistant to the president and press secretary, who is paid $195,200 compared to Colleen Harmon, employee and director of operations for the office of legislative affairs, who makes $121,500). 
 ```
 ### Task 3: Describe the Data
 
 You should examine that dataframe carefully by clicking on it in the Environment tab in RStudio. Write a couple of sentences describing the categories of incidents. From a reporting standpoint, what stands out to you about this data? Are there any salary values that will cause problems for analysis?
 
-ANSWER HERE
+Something that stands out about this data is that some employees make 0 salary (e.g., Marco Rubio, assistant to the president and national security advisor; Tracy Johnson, senior advisor; Alice Johnson, pardon czar). These 0 salaries may raise issues in Some of these employees are more public-facing figures, like Rubio. The 0 salaries might make it difficult to calculate an accurate representation of the employees' salaries when looking for mean, median, min and max.
 
 ### Task 4: Calculate the Mean and Median of the Salaries
 
 Write code to calculate the mean and median of the salaries in the dataset using the `summarize()` function. You don't need to make a new dataframe, just display the results.
 
 ```{r}
-
+students |> summarize(mean_salary = mean(`SALARY`, na.rm = TRUE), median_salary = median(`SALARY`, na.rm = TRUE))
 ```
 
 ### Task 5: Add in the minimum and maximum salaries
@@ -36,17 +40,17 @@ Write code to calculate the mean and median of the salaries in the dataset using
 Take the code you just wrote and add in the minimum and maximum salaries (the functions for that are `min()` and `max()`). Your results should show four columns: mean_salary, median_salary, min_salary, max_salary.
 
 ```{r}
-
+students |> summarize(mean_salary = mean(`SALARY`, na.rm = TRUE), median_salary = median(`SALARY`, na.rm = TRUE), min_salary = min(`SALARY`, na.rm = TRUE), max_salary = max(`SALARY`, na.rm = TRUE))
 ```
 
 ### Task 6: Describe the Results
 
 Write a couple of sentences describing the results of your analysis. What do the mean and median salaries tell you about the data? What do the minimum and maximum salaries tell you? Are there any outliers in the data?
 
-ANSWER HERE
+While the minimum salary is 0 (the data shows 10 employees having this salary), the max salary is $197,200 for Nicholas Stewart, a detailee policy advisor. The outlier is the minimum salary. The minimum salary implies that at least 10 employees are receiving salaries outside of being White House staff. On the other hand, the maximum salary could imply that there are some employees whose income comes mostly from being part of the White House staff. The mean being higher than the median tells us that the data is right-skewed. Because the data is right-skewed,  
 
 ### Task 7: Story Idea
 
 Based on the data, what is your best story idea? What is the next step you would take to develop that story idea?
 
-ANSWER HERE
+I would look into what determines employees' salaries depending on their tenure, relation to the president, experience and status. I would also look into their work schedules to see if employees are working relatively similar hours or if there is an outlier in hours, especially when looking at employees who have the same position and status but different salries (e.g., John Rich and Danny Gustafson are both detailee advisors, but Rich makes nothing and Gustafson makes $121,785). I would contact these employees who share status and position but have different salaries to discuss what determines their pay.
