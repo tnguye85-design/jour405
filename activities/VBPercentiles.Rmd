@@ -39,7 +39,7 @@ team_aces |> mutate(percentile = ntile(total_aces, 100))
 
 Write a couple of sentences that puts Maryland into context with the other teams in the dataset. You can do some Internet research to help with this.
 
-
+Out of the Big 10 volleyball schools, Maryland ranked 15 in the 2024 standings (https://bigten.org/wvb/standings/2024/) with 223 total service aces. While there are no Big 10 volleyball teams surpassing Maryland in service aces, #1 Nebraska beat out Maryland in the official 2024 standing. #1 Nebraska had 155 total service aces, putting them in the 35th percentile compared to Maryland, who sits at the 95th percentile for service aces.
 
 When you are done, save your work, switch to GitHub Desktop, then add, commit and push your changes to GitHub and submit the URL of the notebook in ELMS.
 
