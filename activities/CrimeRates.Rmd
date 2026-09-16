@@ -47,7 +47,7 @@ crimes_with_rates <- crimes |> mutate(violent_rate = violent_crime_total/populat
 ### Task 6: Describe our results
 
 Write a few sentences about what you found in the data. What years had the highest crime rates? What years had the lowest crime rates? Does the pattern match your expectations? What might explain some of the results you found?
-
+The 1990s saw the highest violent crime rates, with 1992 having a rate of 99.92 violent crimes per 10,000 people. 1993 follows with 99.81 violent crimes per 10,000 people. The years with the lowest crime rates were 2020 and 2014. 2020 had 41.22 violent crimes per 10,000 people and 2014 had 44.13 violent crimes per 10,000 people. The years with the highest crimes met my expectation because the years align with the U.S. crack epidemic. 2020 being the year for the lowest violent crime rates makes sense because this was at the height of COVID-19, so people were indoors or wary to be close to others. 
 
 
 
