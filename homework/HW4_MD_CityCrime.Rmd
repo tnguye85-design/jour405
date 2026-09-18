@@ -67,7 +67,10 @@ The lowest property crime percentage changes were Clear Spring (-24.43%), Sharps
 
 Write up a lede and nutgraf of a story with the _best_ story idea you've found in this assignment. The lede should be a single sentence that summarizes the most important information in the data. The nutgraf should be a paragraph that provides more context and explains why the data is important.
 
-ANSWER HERE
+Ocean City surpassed Baltimore in violent crime rates in 2020, placing Ocean City as Maryland's highest ranking city for violent crimes.
+
+Baltimore had 18.34 violent crimes per 1,000 people, whereas Ocean City had 13.10 violent crimes per 1,000 people in 2019. However, the rates shifted in 2020 when Ocean City presented 23.97 violent crimes per 1,000 people and Baltimore saw 15.97 per 1,000 people. There was a 82.89% change in violent crimes between these years for Ocean City, giving Ocean City a staggering increase. 
+
 
 ### Task 9: Save Your Work and Put it on GitHub
 
