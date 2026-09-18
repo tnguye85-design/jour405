@@ -24,13 +24,7 @@ md_cities <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/he
 Calculate violent and property crime rates for each city for both years using `mutate()`. You'll create four new columns: `violent_rate_2019`, `property_rate_2019`, `violent_rate_2020`, and `property_rate_2020`. You'll need to figure out the proper unit rate, given that there are varying populations. There's no perfect choice; choose the one that works best for you. Save the results to a new dataframe called `md_cities_rates`.
 
 ```{r}
-md_cities_rates <- md_cities |> 
-  group_by(city) |> 
-  summarize(violent_rate_2019) = sum(violent2019)
-            property_rate_2019 = sum(property2019)
-            violent_rate_2020 = sum(violent2020)
-            property_rate_2020 = sum(property2020)) |> 
-  arrange(desc(city))
+md_cities_rates <- md_cities |> mutate(violent_rate_2019 = violent2019/pop2019 * 1000, property_rate_2019 = property2019/pop2019 * 1000, violent_rate_2020 = violent2020/pop2020 * 1000, property_rate_2020 = property2019/pop2020 * 1000)
 
 ```
 
