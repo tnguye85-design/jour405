@@ -59,7 +59,7 @@ Look at the `md_cities_change` dataframe by clicking on it in the Environment ta
 
 Something that stood out to me about the violent_crimes_pct_change was that Chevy Chase Sector V, Chevy Chase Sector III, Charlestown, Upper Marlboro, Friendsville and Laytonsville had "Inf" instead of values. A lot of other cities had "NaN" for their values. This makes inferring the data hard because there's no concrete values to analyze these cities with. I would call the cities with "Inf" and "NaN" outliers for that reason. 
 
-The cities with the highest percentage changes were Edmonston (895.32), Poolesville (607.15) and Pocomoke City (300.98). 
+The cities with the highest violent crime percentage changes were Edmonston (895.32%), Poolesville (607.15%) and Pocomoke City (300.98%). For property crime percent changes, the cities that saw the lowest all had -100.00%: Cecilton, Friendship Heights, Myersville, New Windsor, North Chevy Chase, Pittsville, Port Deposit, Queenstown, Ridgely, Rock Hall, Rosemont and Sharpsburg. However, I would call these cities outliers because their percentage changes could be influenced by their 2020 property rates, which 0. 
 
 ### Task 8: Tell the Best Story
 
