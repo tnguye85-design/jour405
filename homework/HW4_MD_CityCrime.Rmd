@@ -36,9 +36,9 @@ The cities with the highest property crime rates were (in order) Ocean City (103
 
 The cities with the highest violent crime rates in 2019 were Baltimore (18.34), Ocean City (13.10) and Williamsport (12.92). In 2020, the cities with the highest violent crime rates were Ocean City (23.97), Baltimore (15.97) and Cambridge (15.69). By 2020, Ocean City surpassed Baltimore in highest violent crime rates. Williamsport was surpassed by Cambridge.
 
+Urban or populated areas are more likely to have high crime rates in Maryland. For example, Ocean City appeared on both property and violent crimes for 2019 and 2020. Property crimes strikingly occurred at a higher rate both years. A story angle I could take would be debunking the idea that Baltimore is known for crime when, looking at property crimes, Baltimore ranked 14th in 2019 and 10th in 2020. This story could also tie in violent crime rates by comparing Baltimore's rates to other high-ranking violent crime rate cities, which have rates relatively close to Baltimore's. The story could compare Ocean City's violent crime rates Baltimore's in 2020. 
 
-
-Side note, Williamsport surprised me because I live 5 minutes away from it.
+(Side note, Williamsport surprised me because I live 5 minutes away from it.)
 
 
 ### Task 5: Calculate Percentage Change
