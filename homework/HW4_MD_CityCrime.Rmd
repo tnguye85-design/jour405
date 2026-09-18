@@ -32,7 +32,7 @@ md_cities_rates <- md_cities |> mutate(violent_rate_2019 = violent2019/pop2019 *
 
 Examine the new dataframe, `md_cities_rates`, by clicking on it in the Environment tab in RStudio and sorting by the rate columns. Write a couple of sentences about the results, comparing and contrasting the cities with the highest rates (both violent and property) in 2019 and 2020. Do you see any patterns? What does this tell you about crime in Maryland cities? What's the story here?
 
-ANSWER HERE
+The cities with the highest property crime rates are (in order) Ocean City, Oakland and Elkton in 2019. For 2020 property crime rates, the cities with the highest rates are 
 
 
 ### Task 5: Calculate Percentage Change
