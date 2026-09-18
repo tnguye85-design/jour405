@@ -47,7 +47,9 @@ Let's add two percentage change columns to your dataframe: one for violent crime
 
 ```{r}
 md_cities_change <- md_cities_rates |> 
-  mutate(violent_crimes_pct_change = (violent_rate_2020 - violent_rate_2019) / violent_rate_2019 * 100, property_crime_pct_change = (property_rate_2020 - property_rate_2019) / property_rate_2019 * 100
+  mutate(
+    violent_crimes_pct_change = (violent_rate_2020 - violent_rate_2019) / violent_rate_2019 * 100,
+    property_crime_pct_change = (property_rate_2020 - property_rate_2019) / property_rate_2019 * 100
   )
 ```
 
@@ -55,7 +57,9 @@ md_cities_change <- md_cities_rates |>
 
 Look at the `md_cities_change` dataframe by clicking on it in the Environment tab in RStudio. Write a couple of sentences describing the percentage change results. What's more interesting here, the patterns or the outliers? What's the story in the data?
 
-ANSWER HERE
+Something that stood out to me about the violent_crimes_pct_change was that Chevy Chase Sector V, Chevy Chase Sector III, Charlestown, Upper Marlboro, Friendsville and Laytonsville had "Inf" instead of values. A lot of other cities had "NaN" for their values. This makes inferring the data hard because there's no concrete values to analyze these cities with. I would call the cities with "Inf" and "NaN" outliers for that reason. 
+
+The cities with the highest percentage changes were Edmonston (895.32), Poolesville (607.15) and Pocomoke City (300.98). 
 
 ### Task 8: Tell the Best Story
 
