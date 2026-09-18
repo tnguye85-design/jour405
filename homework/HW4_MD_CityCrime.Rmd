@@ -46,6 +46,9 @@ Urban or populated areas are more likely to have high crime rates in Maryland. F
 Let's add two percentage change columns to your dataframe: one for violent crime rates and one for property crime rates. You'll calculate the percentage change between 2019 and 2020 for each city. Save the results to a new dataframe called `md_cities_change`.
 
 ```{r}
+md_cities_change <- md_cities_rates |> 
+  mutate(violent_crimes_pct_change = (violent_rate_2020 - violent_rate_2019) / violent_rate_2019 * 100, property_crime_pct_change = (property_rate_2020 - property_rate_2019) / property_rate_2019 * 100
+  )
 ```
 
 ### Task 7: Describe Percentage Changes
