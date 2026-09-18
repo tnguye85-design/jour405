@@ -59,7 +59,9 @@ Look at the `md_cities_change` dataframe by clicking on it in the Environment ta
 
 Something that stood out to me about the violent_crimes_pct_change was that Chevy Chase Sector V, Chevy Chase Sector III, Charlestown, Upper Marlboro, Friendsville and Laytonsville had "Inf" instead of values. A lot of other cities had "NaN" for their values. This makes inferring the data hard because there's no concrete values to analyze these cities with. I would call the cities with "Inf" and "NaN" outliers for that reason. 
 
-The cities with the highest violent crime percentage changes were Edmonston (895.32%), Poolesville (607.15%) and Pocomoke City (300.98%). For property crime percent changes, the cities that saw the lowest all had -100.00%: Cecilton, Friendship Heights, Myersville, New Windsor, North Chevy Chase, Pittsville, Port Deposit, Queenstown, Ridgely, Rock Hall, Rosemont and Sharpsburg. However, I would call these cities outliers because their percentage changes could be influenced by their 2020 property rates, which 0. 
+The cities with the highest violent crime percentage changes were Edmonston (895.32%), Poolesville (607.15%) and Pocomoke City (300.98%). For violent crime percent changes, the cities that saw the lowest all had -100.00%: Cecilton, Friendship Heights, Myersville, New Windsor, North Chevy Chase, Pittsville, Port Deposit, Queenstown, Ridgely, Rock Hall, Rosemont and Sharpsburg. However, I would call these cities outliers because their percentage changes could be influenced by their 2020 property rates, which 0. To me, the outliers are more interesting.
+
+The lowest property crime percentage changes were Clear Spring (-24.43%), Sharpsburg (-17.47%) and Laytonsville (-16.45%). Clear Spring, Sharpsburg and Myersville (though it says "NaN") are all in Washington County. As a reporter, I would look at the efforts Washington County police departments have made towards curbing property crime from 2019 to 2020. The highest property crime percentage changes were Kitzmiller (29.49%), Garrett Park (20.16%) and Somerset (16.79%). Garrett Park and Somerset are in Montgomery County, as well as  
 
 ### Task 8: Tell the Best Story
 
