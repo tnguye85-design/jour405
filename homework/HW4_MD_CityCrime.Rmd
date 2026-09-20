@@ -91,8 +91,5 @@ md_cities_percentiles <- md_cities_rates |> mutate(percentile = ntile(violent_ra
 ```{r}
 md_cities_percentiles |> summarize(violent_crimes_IQR = IQR(violent_rate_2020))
 ```
-
-x
-
 - Do the results change your best story idea from the previous assignment? Why or why not?
 These results don't change my best story idea. It supports my angle that Ocean City and Baltimore presented the most violent crimes in 2020 for Maryland because both cities sit higher outside of the IQR.
