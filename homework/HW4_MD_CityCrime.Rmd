@@ -89,10 +89,10 @@ md_cities_percentiles <- md_cities_rates |> mutate(percentile = ntile(violent_ra
 - Calculate the Interquartile Range of the 2020 violent crime rate using `summarize()` and R's `IQR()` function. The syntax is similar to how `mean()` works.
 
 ```{r}
-md_cities_percentiles |> summarize(md_cities_percentiles = IQR(`percentile`)
+md_cities_percentiles |> summarize(violent_crimes_IQR = IQR(violent_rate_2020))
 ```
 
 x
 
 - Do the results change your best story idea from the previous assignment? Why or why not?
-x
+These results don't change my best story idea. 
