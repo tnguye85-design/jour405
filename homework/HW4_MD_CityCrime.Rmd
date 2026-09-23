@@ -88,8 +88,11 @@ md_cities_percentiles <- md_cities_rates |> mutate(percentile = ntile(violent_ra
 
 - Calculate the Interquartile Range of the 2020 violent crime rate using `summarize()` and R's `IQR()` function. The syntax is similar to how `mean()` works.
 
+students |> summarize(mean_salary = mean(`SALARY`, na.rm = TRUE))
+
+
 ```{r}
 md_cities_percentiles |> summarize(violent_crimes_IQR = IQR(violent_rate_2020))
 ```
 - Do the results change your best story idea from the previous assignment? Why or why not?
-These results change my best story idea slightly. It supports my angle that Ocean City and Baltimore presented the most violent crimes in 2020 for Maryland because both cities sit higher outside of the IQR. Based on the percentiles, however, Ocean City is in the 100th percentile and Baltimore is in the 99th percentile. Since Baltimore's percentile is so close to Ocean City's, I question if Ocean City presents significantly more violent crimes than Baltimore (at least when looking at 2020 rates).
+These results change my best story idea slightly. It supports my angle that Ocean City and Baltimore presented the most violent crimes in 2020 for Maryland because both cities sit higher outside of the IQR. Based on the percentiles, however, Ocean City is in the 100th percentile and Baltimore is in the 99th percentile. Since Baltimore's percentile is so close to Ocean City's, I question if Ocean City presents significantly more violent crimes than Baltimore (at least when looking at 2020 rates). 
