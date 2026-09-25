@@ -29,6 +29,9 @@ spotify_songs |> summarize(mean = mean(danceability), sd = sd(danceability))
 Write code to create a histogram of the danceability scores in the Spotify dataset, based on the example we did in class.
 
 ```{r}
+spotify_songs |>
+  ggplot() +
+  geom_histogram(aes(x = danceability), binwidth = 0.2)
 ```
 
 ### Task 5: Add a line to the histogram for the mean danceability score
@@ -36,6 +39,12 @@ Write code to create a histogram of the danceability scores in the Spotify datas
 Write code to add a vertical line to the histogram for the mean danceability score, based on the example in class.
 
 ```{r}
+spotify_songs |> 
+  ggplot() + 
+  geom_histogram(aes(x = danceability), binwidth = 0.2) +
+  geom_vline(aes(xintercept = mean(danceability)), color = "red", linetype = "dashed", size = 1) +
+  geom_vline(aes(xintercept = mean(danceability) - sd(danceability)), color = "blue", linetype = "dashed", size = 1) +
+  geom_vline(aes(xintercept = mean(danceability) + sd(danceability)), color = "blue", linetype = "dashed", size = 1)
 ```
 
 ### Task 6: Describe our results
