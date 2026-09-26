@@ -50,6 +50,9 @@ spotify_songs |>
 ### Task 6: Describe our results
 
 Write a few sentences about the distribution of danceability scores in the Spotify dataset. Is it a normal distribution, or is it skewed in one direction? What does the mean and distribution tell us about the songs in the dataset?
+This is a relatively normal distribution. There is a large peak near 0.8 danceability compared to the ends of the danceability values, but the data does not skew heavily towards the right or left. The mean (0.67), when visually displayed in the histogram, tells us that there are more songs with a higher danceability compared to songs with low danceability. (I.e., there is a less likelihood of songs from 2020 on Spotify being undanceable.)
+
+This hypothesis can be corrorborated by the standard deviation. The songs that are placed one standard deviation from the mean are also high in danceability, especially because the bar one standard deviation to the right is where the mode is located. This tells us that songs from 2020 on Spotify were consistently danceable, since the distribution of data are closer to the mean.
 
 ### Task 7: Save Your Work and Put it on GitHub
 
