@@ -52,7 +52,7 @@ population |>
 Compare the means and standard deviations. Are they similar? Go back and re-run the sampling and statistics calculations with a smaller sample size. How do the results change?
 The sample population mean and standard deviation is only slightly higher than the population mean and standard deviation. For example, the sample mean age is 49.82 and the population mean age is 49.06. Since aren't measured by decimals, the fact that both sample and population mean ages would be 49 means they are extremely similar, practically the same.
 
-The same happens for standard devitaitons. The sample standard deviation is 17.88, whereas the population standard deviation is 17.77. 
+The same happens for standard deviation The sample standard deviation is 17.88, whereas the population standard deviation is 17.77. 
 
 The sample mean and standard deviation ages are close to the population's mean and standard deviation ages.
 
