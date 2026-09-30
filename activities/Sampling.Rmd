@@ -10,16 +10,32 @@ Follow along with the demo to learn how to sample data from a population using R
 library(tidyverse)
 ```
 
-
-
 ### Task 2: Load 1,000 rows of data with the ages of people from 18-80
 
+```{r}
+set.seed(1234)
+
+population <- tibble(
+  age = sample (18:80, 1000, replace = TRUE)
+)
+```
 
 ### Task 3: Sample 100 rows of data from the dataset
 
+```{r}
+sample100 <- population |>
+  sample_n(100)
+```
 
 ### Task 4: Calculate the mean age and standard deviation of the sample
 
+```{r}
+sample100 |>
+  summarize(
+    mean_age = mean(age),
+    sd_age = sd(age)
+  )
+```
 
 ### Task 5: Calculate the mean age and standard deviation of the population
 
