@@ -6,6 +6,11 @@ Follow along with the demo to learn how to sample data from a population using R
 
 ### Task 1: Load the tidyverse
 
+```{r}
+library(tidyverse)
+```
+
+
 
 ### Task 2: Load 1,000 rows of data with the ages of people from 18-80
 
