@@ -39,6 +39,13 @@ sample100 |>
 
 ### Task 5: Calculate the mean age and standard deviation of the population
 
+```{r}
+population |>
+  summarize(
+    mean_age = mean(age),
+    sd_age = sd(age)
+  )
+```
 
 ### Task 6: Compare the sample and population statistics
 
