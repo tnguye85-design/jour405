@@ -141,19 +141,19 @@ Let's identify days with unusually high or low accident numbers (|z-score| > 2):
 
 ```{r unusual-days}
 # Find days with unusual accident numbers
-unusual_days <- students |>
+unusual_days <- accidents_z_scores |>
   filter(abs(z_score) > 2) |>
   arrange(desc(abs(z_score)))
 
 # Display number of unusual days
 cat("Number of days with unusual accident counts:", nrow(unusual_days), 
-    "out of", nrow(accidents), "total days (", 
-    round(nrow(unusual_days)/nrow(accidents)*100, 2), "%)")
+    "out of", nrow(students), "total days (", 
+    round(nrow(unusual_days)/nrow(students)*100, 2), "%)")
 
 # Display the top 10 most unusual days
 unusual_days |>
   head(10) |>
-  select(date, day_of_week, total, z_score) |>
+  select(date, total, z_score) |>
   kable(digits = 2)
 ```
 
@@ -166,7 +166,7 @@ Let's visualize these unusual days:
 
 ```{r plot-unusual-days}
 # Highlight unusual days in the time series
-ggplot(students, aes(x = date, y = total, color = abs(z_score) > 2)) +
+ggplot(accidents_z_scores, aes(x = date, y = total, color = abs(z_score) > 2)) +
   geom_point(alpha = 0.5) +
   scale_color_manual(values = c("gray", "red"), 
                      name = "Unusual Value",
