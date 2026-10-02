@@ -187,17 +187,17 @@ Let's calculate z-scores that account for day of week patterns based on the same
 
 ```{r day-of-week-z-scores}
 # Calculate day-of-week adjusted z-scores
-accidents <- accidents |>
+dow_z_score <- weekly_patterns |>
   group_by(day_of_week) |>
   mutate(
-    dow_mean = REPLACE_ME,
-    dow_sd = REPLACE_ME,
-    dow_z_score = (REPLACE_ME - REPLACE_ME) / REPLACE_ME
+    dow_mean = mean(total),
+    dow_sd = sd(total),
+    dow_z_score = (total - dow_mean) / dow_sd
   ) |>
   ungroup()
 
 # Find days with unusual day-of-week z-scores
-unusual_dow <- accidents |>
+unusual_dow <- students |>
   filter(abs(dow_z_score) > 2) |>
   arrange(desc(abs(dow_z_score)))
 
