@@ -41,21 +41,21 @@ Let's first understand our dataset structure:
 
 ```{r data-exploration}
 # Get a summary of the data
-summary(accidents)
+summary(students)
 
 # Check how many days we have in total
-nrow(accidents)
+nrow(students)
 
 # Check the date range
-min(accidents$date)
-max(accidents$date)
+min(students$date)
+max(students$date)
 ```
 
 Now let's create a time series visualization of accidents:
 
 ```{r time-series-plot}
 # Plot time series
-ggplot(accidents, aes(x = date, y = total)) +
+ggplot(students, aes(x = date, y = total)) +
   geom_line(alpha = 0.5) +
   geom_smooth(method = "loess", span = 0.1) +
   theme_minimal() +
