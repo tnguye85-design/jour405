@@ -68,13 +68,17 @@ ggplot(students, aes(x = date, y = total)) +
 ### Task 2 (3 points)
 Looking at the time series visualization above, identify at least two noticeable patterns or anomalies. What questions would you want to investigate further based on this initial view of the data? How might these visual patterns translate into potential story angles?
 
-ANSWER HERE
+There was an apparent dip in car accidents around 2020. The other noticeable pattern is the spike in accidents in 2022; the vertical line is more apparent than other lines.
+
+Since the dip started in 2020, I suspect that the dip happened because of the pandemic (i.e., less people were leaving their homes). I would question the timeline of the pandemic, specifically by investigating specific dates where the decrease began (e.g., when the lockdown was announced), as well as reasons why the accidents rose (e.g., the correlation between vaccines being available to the public, which gave people a sense of safety to leave their homes). I would also question what would factor into more accidents in 2022.
+
+These visual patterns would translate into potential story angles in a similar vein. That is, by comparing 2020 accidents to 2022 accidents, how did moving past quarantine procedures affect drivers? Were people antsy to drive so they didn't follow road rules? Or was there something larger contributing to these statistics? 
 
 The daily data is quite noisy, so let's also look at weekly patterns:
 
 ```{r weekly-patterns}
 # Add day of week 
-accidents <- accidents |>
+weekly_patterns <- students |>
   mutate(
     day_of_week = wday(date, label = TRUE),
     month = floor_date(date, "month"),
@@ -82,7 +86,7 @@ accidents <- accidents |>
   )
 
 # Check accident patterns by day of week
-day_of_week_summary <- accidents |>
+day_of_week_summary <- students |>
   group_by(day_of_week) |>
   summarize(
     avg_accidents = mean(total),
@@ -95,7 +99,7 @@ day_of_week_summary <- accidents |>
 day_of_week_summary |> kable(digits = 2)
 
 # Visualize by day of week
-ggplot(accidents, aes(x = day_of_week, y = total)) +
+ggplot(students, aes(x = day_of_week, y = total)) +
   geom_boxplot() +
   theme_minimal() +
   labs(title = "Accident Distribution by Day of Week",
