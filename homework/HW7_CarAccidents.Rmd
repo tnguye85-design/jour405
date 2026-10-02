@@ -121,15 +121,15 @@ Now, using the accidents dataframe, add three columns using `mutate()`: mean_acc
 
 ```{r calculate-z-scores}
 # Calculate z-scores for total accidents
-accidents <- accidents |>
+ accidents_z_scores <- students |>
   mutate(
-    mean_accidents = REPLACE_ME,
-    sd_accidents = REPLACE_ME,
-    z_score = (REPLACE_ME - REPLACE_ME) / REPLACE_ME
+    mean_accidents = mean(total),
+    sd_accidents = sd(total),
+    z_score = (total - mean_accidents) / sd_accidents
   )
 
 # Display the data with z-scores
-accidents |>
+accidents_z_scores |>
   select(date, day_of_week, total, z_score) |>
   head(10) |>
   kable(digits = 2)
@@ -141,7 +141,7 @@ Let's identify days with unusually high or low accident numbers (|z-score| > 2):
 
 ```{r unusual-days}
 # Find days with unusual accident numbers
-unusual_days <- accidents |>
+unusual_days <- students |>
   filter(abs(z_score) > 2) |>
   arrange(desc(abs(z_score)))
 
@@ -166,7 +166,7 @@ Let's visualize these unusual days:
 
 ```{r plot-unusual-days}
 # Highlight unusual days in the time series
-ggplot(accidents, aes(x = date, y = total, color = abs(z_score) > 2)) +
+ggplot(students, aes(x = date, y = total, color = abs(z_score) > 2)) +
   geom_point(alpha = 0.5) +
   scale_color_manual(values = c("gray", "red"), 
                      name = "Unusual Value",
