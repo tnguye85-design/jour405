@@ -32,7 +32,7 @@ library(lubridate)  # For working with dates
 Load the accident data from our CSV file at https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/daily_accidents.csv into a dataframe called `accidents`:
 
 ```{r load-data}
-
+students <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/daily_accidents.csv")
 ```
 
 ## Data Exploration
