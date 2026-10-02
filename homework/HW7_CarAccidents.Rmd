@@ -86,7 +86,7 @@ weekly_patterns <- students |>
   )
 
 # Check accident patterns by day of week
-day_of_week_summary <- students |>
+day_of_week_summary <- weekly_patterns |>
   group_by(day_of_week) |>
   summarize(
     avg_accidents = mean(total),
@@ -99,7 +99,7 @@ day_of_week_summary <- students |>
 day_of_week_summary |> kable(digits = 2)
 
 # Visualize by day of week
-ggplot(students, aes(x = day_of_week, y = total)) +
+ggplot(weekly_patterns, aes(x = day_of_week, y = total)) +
   geom_boxplot() +
   theme_minimal() +
   labs(title = "Accident Distribution by Day of Week",
