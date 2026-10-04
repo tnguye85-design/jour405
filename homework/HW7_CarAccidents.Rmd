@@ -111,7 +111,7 @@ ggplot(accidents, aes(x = day_of_week, y = total)) +
 ### Task 3 (2 points)
 Based on the day-of-week analysis, which day(s) have the highest and lowest average accidents? Why might these patterns exist?
 
-ANSWER HERE
+The days with the lowest average incidences are Sunday (one outlier dot) and Monday (two outlier dots, with the farthest data point closer to the X-axis than others). The days with the higher average incidences are Tuesday (with three outliers) and Wednesday and Thursday (two outliers, but Wednesday's farthest outlier is farther compared to Thursday's). Friday has the highest number of incidences, with Friday nearly reaching 60 and having the most farthest outlier for high incidences.  
 
 ## Calculating Z-Scores
 
