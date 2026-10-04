@@ -141,17 +141,17 @@ Let's identify days with unusually high or low accident numbers (|z-score| > 2):
 
 ```{r unusual-days}
 # Find days with unusual accident numbers
-unusual_days <- accidents_z_scores |>
+accidents <- accidents |>
   filter(abs(z_score) > 2) |>
   arrange(desc(abs(z_score)))
 
 # Display number of unusual days
 cat("Number of days with unusual accident counts:", nrow(unusual_days), 
-    "out of", nrow(students), "total days (", 
-    round(nrow(unusual_days)/nrow(students)*100, 2), "%)")
+    "out of", nrow(accidents), "total days (", 
+    round(nrow(unusual_days)/nrow(accidents)*100, 2), "%)")
 
 # Display the top 10 most unusual days
-unusual_days |>
+accidents |>
   head(10) |>
   select(date, day_of_week, total, z_score) |>
   kable(digits = 2)
@@ -166,7 +166,7 @@ Let's visualize these unusual days:
 
 ```{r plot-unusual-days}
 # Highlight unusual days in the time series
-ggplot(accidents_z_scores, aes(x = date, y = total, color = abs(z_score) > 2)) +
+ggplot(accidents, aes(x = date, y = total, color = abs(z_score) > 2)) +
   geom_point(alpha = 0.5) +
   scale_color_manual(values = c("gray", "red"), 
                      name = "Unusual Value",
@@ -248,7 +248,7 @@ accidents <- accidents |>
   mutate(month_of_year = month(date, label = TRUE))
 
 # Calculate average accidents by month
-monthly_pattern <- accidents |>
+accidents <- accidents |>
   group_by(month_of_year) |>
   summarize(
     avg_accidents = mean(total),
@@ -256,7 +256,7 @@ monthly_pattern <- accidents |>
   )
 
 # Plot monthly pattern
-ggplot(monthly_pattern, aes(x = month_of_year, y = avg_accidents, group = 1)) +
+ggplot(accidents, aes(x = month_of_year, y = avg_accidents, group = 1)) +
   geom_line() +
   geom_point() +
   theme_minimal() +
@@ -276,12 +276,12 @@ accidents <- accidents |>
   ungroup()
 
 # Find days with unusual monthly z-scores
-unusual_monthly <- accidents |>
+accidents <- accidents |>
   filter(abs(monthly_z_score) > 2) |>
   arrange(desc(abs(monthly_z_score)))
 
 # Display top days that are unusual for their month
-unusual_monthly |>
+accidents |>
   head(10) |>
   select(date, month_of_year, day_of_week, total, monthly_mean, monthly_z_score) |>
   kable(digits = 2)
