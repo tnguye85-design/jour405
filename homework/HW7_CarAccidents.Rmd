@@ -211,7 +211,7 @@ adjusted_dow |>
 ### Task 7 (3 points)
 Compare the days that have extreme z-scores overall versus those with extreme day-of-week z-scores. How do these lists differ? What journalistic insights can you draw from comparing these two different approaches to measuring "unusual" days?
 
-By comparing different approaches to measure "unusual days," a journalist could get a closer look at how far away the z-scores are to the mean. Measuring unusual days by day of the week shows that these dates have more extreme z-scores. In comparsion, the lowest dow_z_score is 2.95 for Feb. 11, 2020, whereas the lowest z-score in general was -2.27 and the highest was 0.46 (Feb. 12, 2017). The highest when measuring the adjusted z-scores was 4.17, which shows a significant difference in z-score ranges.
+By comparing different approaches to measure "unusual days," a journalist could a broader look at z-scores with a larger sample size. Measuring unusual days by day of the week shows that these dates have more less z-scores. In comparsion, the the lowest overall z-score is 2.95 for Feb. 11, 2020, whereas the lowest z-score day of week was -2.27 and the highest was 0.46 (Feb. 12, 2017). The highest when measuring the adjusted z-scores was 4.17, which shows a significant difference in z-score ranges. As a journalist, measuring z-scores by the day of week would be helpful when you narrow down a specific time period to look at, but looking at the overall z-scores gives variety to data.  
 
 Let's see how many unusual days we have for each day of the week:
 
