@@ -217,17 +217,17 @@ Let's see how many unusual days we have for each day of the week:
 
 ```{r unusual-by-dow}
 # Count unusual days by day of week
-unusual_count_by_dow <- accidents |>
+adjusted_dow <- adjusted_dow |>
   filter(abs(dow_z_score) > 2) |>
   count(day_of_week) |>
   arrange(desc(n))
 
 # Get total count by day of week for comparison
-total_by_dow <- accidents |>
+adjusted_dow <- adjusted_dow |>
   count(day_of_week)
 
 # Join to calculate percentages
-unusual_rates <- unusual_count_by_dow |>
+adjusted_dow <- adjusted_dow |>
   left_join(total_by_dow, by = "day_of_week") |>
   rename(unusual_days = n.x, total_days = n.y) |>
   mutate(
