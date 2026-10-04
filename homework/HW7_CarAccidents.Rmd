@@ -197,7 +197,7 @@ dow_z_score <- weekly_patterns |>
   ungroup()
 
 # Find days with unusual day-of-week z-scores
-unusual_dow <- students |>
+unusual_dow <- accidents |>
   filter(abs(dow_z_score) > 2) |>
   arrange(desc(abs(dow_z_score)))
 
@@ -217,7 +217,7 @@ Let's see how many unusual days we have for each day of the week:
 
 ```{r unusual-by-dow}
 # Count unusual days by day of week
-unusual_count_by_dow <- students |>
+unusual_count_by_dow <- accidents |>
   filter(abs(dow_z_score) > 2) |>
   count(day_of_week) |>
   arrange(desc(n))
