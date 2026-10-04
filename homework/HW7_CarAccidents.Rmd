@@ -160,7 +160,7 @@ accidents |>
 ### Task 5 (3 points)
 Choose one of the top 10 unusual days and research what might have happened on that date. Look for weather events, holidays, major incidents, or other factors that could explain the unusual number of accidents. Briefly describe your findings and how you would incorporate this context into a story.
 
-ANSWER HERE
+Feburary 2017 had the top 10 most unusual days for car accidents. I found that strong wind gusts during this time could have contributed to car accidents from a report by the National Weather Service (https://www.weather.gov/media/publications/presto/2017feb.pdf). There were strong wind gusts Feb. 12-13 that peaked at 63 mph, which aligns with Feb. 12 and 13th's z-scores being farther from the average for other dates in the top 10. I would incorporate this information in a story by explaining that wind gusts could have contributed to Feb 12-13's car accident rates, but that there is another unexplained factor behind the other unusual dates.
 
 Let's visualize these unusual days:
 
