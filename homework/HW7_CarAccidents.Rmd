@@ -78,7 +78,7 @@ The daily data is quite noisy, so let's also look at weekly patterns:
 
 ```{r weekly-patterns}
 # Add day of week 
-weekly_patterns <- accidents |>
+accidents <- accidents |>
   mutate(
     day_of_week = wday(date, label = TRUE),
     month = floor_date(date, "month"),
@@ -86,7 +86,7 @@ weekly_patterns <- accidents |>
   )
 
 # Check accident patterns by day of week
-day_of_week_summary <- weekly_patterns |>
+day_of_week_summary <- accidents |>
   group_by(day_of_week) |>
   summarize(
     avg_accidents = mean(total),
@@ -99,7 +99,7 @@ day_of_week_summary <- weekly_patterns |>
 day_of_week_summary |> kable(digits = 2)
 
 # Visualize by day of week
-ggplot(weekly_patterns, aes(x = day_of_week, y = total)) +
+ggplot(accidents, aes(x = day_of_week, y = total)) +
   geom_boxplot() +
   theme_minimal() +
   labs(title = "Accident Distribution by Day of Week",
@@ -121,7 +121,7 @@ Now, using the accidents dataframe, add three columns using `mutate()`: mean_acc
 
 ```{r calculate-z-scores}
 # Calculate z-scores for total accidents
- accidents_z_scores <- accidents |>
+ accidents <- accidents |>
   mutate(
     mean_accidents = mean(total),
     sd_accidents = sd(total),
@@ -129,7 +129,7 @@ Now, using the accidents dataframe, add three columns using `mutate()`: mean_acc
   )
 
 # Display the data with z-scores
-day_of_week_summary |>
+accidents |>
   select(date, day_of_week, total, z_score) |>
   head(10) |>
   kable(digits = 2)
