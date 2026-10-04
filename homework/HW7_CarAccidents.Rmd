@@ -187,7 +187,7 @@ Let's calculate z-scores that account for day of week patterns based on the same
 
 ```{r day-of-week-z-scores}
 # Calculate day-of-week adjusted z-scores
-dow_z_score <- weekly_patterns |>
+adjusted_dow <- accidents |>
   group_by(day_of_week) |>
   mutate(
     dow_mean = mean(total),
@@ -197,12 +197,12 @@ dow_z_score <- weekly_patterns |>
   ungroup()
 
 # Find days with unusual day-of-week z-scores
-unusual_dow <- accidents |>
+adjusted_dow <- adjusted_dow |>
   filter(abs(dow_z_score) > 2) |>
   arrange(desc(abs(dow_z_score)))
 
 # Display the top unusual days adjusted for day of week
-unusual_dow |>
+adjusted_dow |>
   head(10) |>
   select(date, total, dow_mean, dow_z_score) |>
   kable(digits = 2)
