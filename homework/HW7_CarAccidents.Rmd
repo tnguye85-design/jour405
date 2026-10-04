@@ -141,7 +141,7 @@ Let's identify days with unusually high or low accident numbers (|z-score| > 2):
 
 ```{r unusual-days}
 # Find days with unusual accident numbers
-accidents <- accidents |>
+unusual_days <- accidents |>
   filter(abs(z_score) > 2) |>
   arrange(desc(abs(z_score)))
 
