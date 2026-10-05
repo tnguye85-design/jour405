@@ -288,9 +288,9 @@ accidents |>
 ```
 
 ### Task 8 (2 points)
-Based on the monthly pattern analysis, which months have the highest and lowest average accidents? Develop a hypothesis about why these seasonal patterns exist.
+Based on the monthly pattern analysis, which months have the highest and lowest average accidents? Develop a hypothesis about why these seasonal patterns exist. 
 
-ANSWER HERE
+The lowest average accidents were in January, whereas the highest average accidents were in October. January could have lower accidents on average because it's winter, meaning people are less likely to want to leave their houses. October could have higher average accidents due to Halloween. On Halloween, there is a more likely chance of people drunk driving.
 
 ## Identifying Extreme Outliers
 
