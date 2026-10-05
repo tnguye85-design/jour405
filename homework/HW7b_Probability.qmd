@@ -119,7 +119,7 @@ actual_prob
 
 **Write a sentence describing this probability in plain English. How does the normal approximation (prob_less) compare to the actual percentage?**
 
-ANSWER HERE
+The normal approximation (0.1688443%) is below the actual percentage (0.1818182%), which doesn't stand out as unusual. 
 
 ### Task 5: Probability between two values (3 points)
 
