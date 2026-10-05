@@ -96,7 +96,7 @@ day_of_week_summary <- accidents |>
   )
 
 # Display day of week summary
-day_of_week_summary |> kable(digits = 2)
+accidents |> kable(digits = 2)
 
 # Visualize by day of week
 ggplot(accidents, aes(x = day_of_week, y = total)) +
@@ -141,14 +141,14 @@ Let's identify days with unusually high or low accident numbers (|z-score| > 2):
 
 ```{r unusual-days}
 # Find days with unusual accident numbers
-unusual_days <- accidents |>
+accidents <- accidents |>
   filter(abs(z_score) > 2) |>
   arrange(desc(abs(z_score)))
 
 # Display number of unusual days
-cat("Number of days with unusual accident counts:", nrow(unusual_days), 
+cat("Number of days with unusual accident counts:", nrow(accidents), 
     "out of", nrow(accidents), "total days (", 
-    round(nrow(unusual_days)/nrow(accidents)*100, 2), "%)")
+    round(nrow(accidents)/nrow(accidents)*100, 2), "%)")
 
 # Display the top 10 most unusual days
 accidents |>
@@ -160,7 +160,7 @@ accidents |>
 ### Task 5 (3 points)
 Choose one of the top 10 unusual days and research what might have happened on that date. Look for weather events, holidays, major incidents, or other factors that could explain the unusual number of accidents. Briefly describe your findings and how you would incorporate this context into a story.
 
-Feburary 2017 had the top 10 most unusual days for car accidents. I found that strong wind gusts during this time could have contributed to car accidents from a report by the National Weather Service (https://www.weather.gov/media/publications/presto/2017feb.pdf). There were strong wind gusts Feb. 12-13 that peaked at 63 mph, which aligns with Feb. 12 and 13th's z-scores being farther from the average for other dates in the top 10. I would incorporate this information in a story by explaining that wind gusts could have contributed to Feb 12-13's car accident rates, but that there is another unexplained factor behind the other unusual dates.
+Friday, Oct. 29, 2021 was a time of unusual heavy downpour and strong winds. An article from the Washington Post (https://www.washingtonpost.com/dc-md-va/2021/10/29/flooding-roads-closed/) described this weather event to be one of the worst instances of coastal flooding for the Washington-Maryland area. Gov. Larry Hogan declared a state of emergency for areas of Maryland, including Prince George's County. The mix of downpour and wind could have contributed to car accidents if people were on the roads at the time. I would incorporate this information into a story by explaining that while Prince George's County saw an unusual number of car crashes on Oct. 29, 2021 due to a strong rainstorm, this weather event does not explain other unusual dates. 
 
 Let's visualize these unusual days:
 
@@ -187,7 +187,7 @@ Let's calculate z-scores that account for day of week patterns based on the same
 
 ```{r day-of-week-z-scores}
 # Calculate day-of-week adjusted z-scores
-adjusted_dow <- accidents |>
+accidents <- accidents |>
   group_by(day_of_week) |>
   mutate(
     dow_mean = mean(total),
@@ -197,7 +197,7 @@ adjusted_dow <- accidents |>
   ungroup()
 
 # Find days with unusual day-of-week z-scores
-adjusted_dow <- adjusted_dow |>
+accidents <- accidents |>
   filter(abs(dow_z_score) > 2) |>
   arrange(desc(abs(dow_z_score)))
 
@@ -290,7 +290,7 @@ accidents |>
 ### Task 8 (2 points)
 Based on the monthly pattern analysis, which months have the highest and lowest average accidents? Develop a hypothesis about why these seasonal patterns exist. 
 
-The lowest average accidents were in January, whereas the highest average accidents were in October. January could have lower accidents on average because it's winter, meaning people are less likely to want to leave their houses. October could have higher average accidents due to Halloween. On Halloween, there is a more likely chance of people drunk driving.
+The lowest average accidents were in January, whereas the highest average accidents were in October. January could have lower accidents on average because it's winter, meaning people are less likely to want to leave their houses. October could have higher average accidents due to Halloween. On Halloween, there is a more likely chance of people drunk
 
 ## Identifying Extreme Outliers
 
