@@ -47,7 +47,7 @@ wh_paid |>
 
 **Describe the shape of the distribution. Is it roughly normal? Skewed? Where do most salaries cluster?**
 
-ANSWER HERE
+The distribution is left-skewed. The salaries mostly cluster one standard deviation to the left of the mean (-1).
 
 ### Task 3: The Empirical Rule (3 points)
 
@@ -81,7 +81,7 @@ empirical
 
 **How closely does the data follow the empirical rule? What does any deviation tell you about the distribution?**
 
-ANSWER HERE
+The data follows the empirical rule closely. So far, this data doesn't reveal significant unusual patterns because 100% of the data is within 3 standard deviations of the mean. 65.9% of the paid salaries fall within 1 standard deviation and 91.2% fall within 2 standard deviations, which closely follows the rule. 
 
 ### Task 4: From z-scores to probability with pnorm() (4 points)
 
