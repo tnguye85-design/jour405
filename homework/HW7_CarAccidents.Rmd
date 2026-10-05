@@ -197,7 +197,7 @@ accidents <- accidents |>
   ungroup()
 
 # Find days with unusual day-of-week z-scores
-accidents <- accidents |>
+adjusted_dow <- accidents |>
   filter(abs(dow_z_score) > 2) |>
   arrange(desc(abs(dow_z_score)))
 
@@ -211,23 +211,25 @@ adjusted_dow |>
 ### Task 7 (3 points)
 Compare the days that have extreme z-scores overall versus those with extreme day-of-week z-scores. How do these lists differ? What journalistic insights can you draw from comparing these two different approaches to measuring "unusual" days?
 
-By comparing different approaches to measure "unusual days," a journalist could a broader look at z-scores with a larger sample size. Measuring unusual days by day of the week shows that these dates have more less z-scores. In comparsion, the the lowest overall z-score is 2.95 for Feb. 11, 2020, whereas the lowest z-score day of week was -2.27 and the highest was 0.46 (Feb. 12, 2017). The highest when measuring the adjusted z-scores was 4.17, which shows a significant difference in z-score ranges. As a journalist, measuring z-scores by the day of week would be helpful when you narrow down a specific time period to look at, but looking at the overall z-scores gives variety to data.  
+For journalistic purposes, examining overall z-scores gives a broader look at unusual data. However, if I were to narrow down my time frame, looking at extreme z-scores can help examining whether or not that time period's z-scores match up with extreme day-of-week z-scores. For example, I could look at whether or not a certain day of the week sees more car accidents-- if so, I could investigate factors that could rationalize why certain days of the week see a rise in accidents.
+
+The overall z-scores provide higher z-scores because they examine a larger sample (e.g., the highest overall z-score was 4.77, whereas the day of week's highest was 2.29). Comparing overall gives a holistic perspective, but looking at the extreme day of the week z-scores is better when a sample is narrowed down.
 
 Let's see how many unusual days we have for each day of the week:
 
 ```{r unusual-by-dow}
 # Count unusual days by day of week
-adjusted_dow <- adjusted_dow |>
+accidents <- accidents |>
   filter(abs(dow_z_score) > 2) |>
   count(day_of_week) |>
   arrange(desc(n))
 
 # Get total count by day of week for comparison
-adjusted_dow <- adjusted_dow |>
+total_by_dow <- accidents |>
   count(day_of_week)
 
 # Join to calculate percentages
-adjusted_dow <- adjusted_dow |>
+pct_unusual <- accidents |>
   left_join(total_by_dow, by = "day_of_week") |>
   rename(unusual_days = n.x, total_days = n.y) |>
   mutate(
@@ -235,7 +237,7 @@ adjusted_dow <- adjusted_dow |>
   )
 
 # Display results
-unusual_rates |> kable(digits = 2)
+pct_unusual |> kable(digits = 2)
 ```
 
 ## Monthly Patterns
@@ -298,7 +300,7 @@ Let's look specifically at days with extremely unusual accident counts (z-scores
 
 ```{r extreme-outliers}
 # Find extreme outliers
-extreme_outliers <- accidents |>
+accidents <- accidents |>
   filter(abs(z_score) > 3) |>
   arrange(desc(abs(z_score)))
 
@@ -315,9 +317,14 @@ if(nrow(extreme_outliers) > 0) {
 ### Task 9 (2 points)
 For the extreme outliers identified (z-scores beyond ±3), what do they have in common?
 
-ANSWER HERE
+They all took place over the weekend (Friday, Oct. 29, 2021, 4.77; Saturday, May. 29, 2021, 3,62; Friday, Nov. 16, 2018, 3.33; Friday, April 24, 2021, 3.33; Saturday, May 15, 2021, 3.33; Friday, July 23, 2021, 3.33).
 
 ## Your Best Story Pitch
+
+Car accidents surge during weekends, data reveals
+by Tien Nguyen
+
+The "Buckle up" messages along the highway aren't wrong. Z-score analysis of car accidents in Prince George's County reveal that car accidents statistically occur more on Fridays and Saturdays. 
 
 ### Task 10 (5 points)
 Based on all the analyses performed, craft your best story pitch, including a headline and lede. Be sure to include what kinds of sources/people you'd talk to for the story.
