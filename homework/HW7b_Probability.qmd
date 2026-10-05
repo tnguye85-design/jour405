@@ -9,6 +9,8 @@ In this assignment, you'll build on your z-score skills to answer probability qu
 Load the tidyverse and the White House salaries data from https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/white_house_salaries_2025.csv into a dataframe called `wh_salaries`
 
 ```{r}
+wh_salaries <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/white_house_salaries_2025.csv")
+
 ```
 
 ### Task 2: Filter and summarize (2 points)
@@ -19,8 +21,12 @@ You may remember from HW3 that some White House staffers have a salary of $0. Le
 wh_paid <- wh_salaries |>
   filter(SALARY > 0)
 
-
-
+wh_paid |>
+  mutate(
+    mean_paid = mean(SALARY),
+    median_paid = median(SALARY),
+    sd_paid = sd(SALARY),
+  )
 ```
 
 Now create a histogram of the paid salaries with a vertical line for the mean and two more for ±1 standard deviation, similar to what you did in HW6 with Spotify data.
