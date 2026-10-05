@@ -175,7 +175,7 @@ bins |> select(category, expected_count, observed_count, difference)
 
 **Where does reality differ most from what the normal distribution predicts? What might explain those differences?**
 
-ANSWER HERE
+Reality differs most for White House employees making between $60k-$90k. There is a 73 count difference. There is also a high difference for employees making below $60k, with the expected count being 40.3 and the observed count being 2 employees (-38.3 count difference). Something that could explain these differences are the number of part-time versus full-time staff members. I wonder if staff cuts (or new hires) could also contribute to the normal distribution predictions being off?
 
 ### Task 7: Story pitch (4 points)
 
@@ -183,7 +183,14 @@ Based on your probability analysis, write a headline and lede for a story about 
 
 Then write 2-3 sentences describing how you would use probability thinking to advance this story — what could you compare these probabilities to, and what additional analysis would help?
 
-ANSWER HERE
+White House employee salaries higher than predicted numbers.
+By Tien Nguyen
+
+The White House published their salary reports for 2025, revealing figures that go against assumptions about the number of staff members being paid inadequately. While probability results expected at least 40.3 employees earning less than $60k in 2025, the observed data reveals that only 2 employees were paid below $60k this year. 
+
+--
+
+If I were advance this story, I would use probability to compare 2025 salaries to the past 3 years of White House salaries using the same reports published by the White House. If the probability results are consistently incorrect from the actual data, then it is worth investigating factors as to why the figures differ. For example, do White House staff layoffs affect the salary reports (i.e., are these employee salaries still published despite getting laid off before the report can be completed)? I would also analyze trends in raises or promotions-- maybe these would factor into the difference?
 
 ### Task 8: Save Your Work and Put it on GitHub
 
