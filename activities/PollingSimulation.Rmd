@@ -67,7 +67,7 @@ sample_500 <- mean(sample_500$unaffiliated)
 
 How did the estimate change compared to the sample of 50? What does this suggest about sample size?
 
-I played around with the set.seed multiple times, using 40, 35 and and ending with 12. Each time, the proportion of unaffiliated respondents never left the 0.3 range. 
+I played around with the set.seed multiple times, using 40, 35 and and ending with 12. Each time, the proportion of unaffiliated respondents never left the 0.3 range. This suggests that more samples are more representative of the population.  
 
 ### Task 6: Simulate many polls
 
