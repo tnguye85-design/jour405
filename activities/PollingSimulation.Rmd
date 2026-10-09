@@ -118,12 +118,14 @@ The histogram on the left is shorter height-wise but has more data along the x-a
 
 **Compare the two histograms.** What is the most visible difference between the n=50 and n=500 distributions? What does that difference tell you about what happens when a poll uses a larger sample?
 
-The more visible difference is that the histogram with a smaller sample size presents a more normal distribution compared to the histogram with a larger sample size. 
+The more visible difference is that the histogram with a smaller sample size presents a more normal distribution compared to the histogram with a larger sample size. This says that a poll using a larger sample size will get data closer to the true proportion.
 
 **Both distributions are centered near the red line.** What does it mean that 1,000 different random samples — each one drawn independently — tend to cluster around the same value? What would it mean for journalism if that *weren't* the case?
 
-ANSWER HERE
+For 1,000 random different samples to cluster around the same value, this would suggest that the more samples taken would produce results more representative of the population. If this weren't the case, this could mean sampling from a large population may not produce evidence or opinions accurate to a large population. It would be harder for journalists to get an accurate understanding or coverage of a larger population's trends or opinions. 
 
 **A reporter tells you their story is based on a poll of 50 people.** Based on what you've seen in the simulation, what questions would you want to ask before trusting that number? You don't need to use any technical terms — just describe what you observed.
+
+Are these people independently selected for the poll? How much larger is the population being studied? What variables are considered for the poll/what are people asked to answer?  
 
 When finished, save your work, switch to GitHub Desktop, then add, commit and push your changes to GitHub and submit the URL of the notebook in ELMS.
