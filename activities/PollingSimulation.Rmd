@@ -58,12 +58,16 @@ The sample estimate was 0.32 compared to the original proportion, which was 0.35
 Now sample 500 rows. Set a different seed value, grab the sample and save it as `sample_500`. Calculate the proportion of unaffiliated respondents in this sample.
 
 ```{r}
+set.seed(12)
 
+sample_500 <- ces |> sample_n(500)
+
+sample_500 <- mean(sample_500$unaffiliated) 
 ```
 
 How did the estimate change compared to the sample of 50? What does this suggest about sample size?
 
-ANSWER HERE
+I played around with the set.seed multiple times, using 40, 35 and and ending with 12. Each time, the proportion of unaffiliated respondents never left the 0.3 range. 
 
 ### Task 6: Simulate many polls
 
