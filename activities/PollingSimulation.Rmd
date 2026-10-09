@@ -35,19 +35,23 @@ ces <- ces |>
 population_proportion <- mean(ces$unaffiliated) 
 ```
 
-That population proportion is the "true" population value that any poll is trying to estimate. Write it down — you'll be comparing everything else to it.
+That population proportion is the "true" population value that any poll is trying to estimate. Write it down — you'll be comparing everything else to it. (Task 3 population proportion: 0.359/0.36)
 
 ### Task 4: Take a single small sample
 
 Use `set.seed(42)` and then sample 50 rows from `ces`. Save it as `sample_50`. Calculate the proportion of unaffiliated respondents in your sample.
 
 ```{r}
+set.seed(42)
 
+sample_50 <- ces |> sample_n(50)
+
+population_proportion_small <- mean(sample_50$unaffiliated) 
 ```
 
 How close is your sample estimate to the original proportion? Is it surprising?
 
-ANSWER HERE
+The sample estimate was 0.32 compared to the original proportion, which was 0.359/0.36. This result wasn't surprising. The sample estimate isn't guaranteed to be exact to the original population proportion, but because the sample was taken from the larger population it was able to fall closer to the true proportion. 
 
 ### Task 5: Take a single larger sample
 
