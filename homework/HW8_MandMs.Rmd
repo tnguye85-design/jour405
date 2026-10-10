@@ -21,14 +21,24 @@ MMs <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/heads/ma
 ### Task 3: Sample 5 rows of data from the dataset
 
 ```{r}
+set.seed(42)
 
+sample_5 <- MMs |> sample_n(5)
 ```
 
 
-### Task 4: Calculate the mean age and standard deviation of the sample, using either the red or black number of M&Ms
+### Task 4: Calculate the mean and standard deviation of the sample, using either the red or black number of M&Ms
+
+```{r}
+MMs |> summarize(mean = mean(red), sd = sd(red))
+```
 
 
-### Task 5: Calculate the mean age and standard deviation of the population, using the same measure as in Task 4
+### Task 5: Calculate the mean and standard deviation of the population, using the same measure as in Task 4
+
+```{r}
+MMs |> summarize(mean = mean(black), sd = sd(black))
+```
 
 
 ### Task 6: Compare the sample and population statistics
