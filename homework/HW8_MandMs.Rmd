@@ -30,24 +30,25 @@ sample_5 <- MMs |> sample_n(5)
 ### Task 4: Calculate the mean and standard deviation of the sample, using either the red or black number of M&Ms
 
 ```{r}
-MMs |> summarize(mean = mean(red), sd = sd(red))
+sample_5 |> summarize(mean = mean(red), sd = sd(red))
 ```
 
 
 ### Task 5: Calculate the mean and standard deviation of the population, using the same measure as in Task 4
 
 ```{r}
-MMs |> summarize(mean = mean(black), sd = sd(black))
+MMs |> summarize(mean = mean(total), sd = sd(total))
 ```
 
 
 ### Task 6: Compare the sample and population statistics
 
-Compare the two sets of means and standard deviations. Are they similar?
+The two sets are not similar. The mean and standard deviations for red M&Ms were lower than the mean and sd were the total population. The means were significantly different, which makes sense considering the mean for the population accounts for more data. The standard deviation for the red M&Ms was lower than the population, which also makes sense because that data only accounts for red M&Ms.
 
 ### Task 7: Describe the results
 
 Write a few sentences about what you found in the data. What does this tell you about the M&Ms dataset and about the act of random sampling?
 
+The data will cluster at different areas depending on what the mean is being calculated based on. Random sampling works when you have a targeted characteristic (in this instance, red M&Ms), but it can also present high variability with each sample (i.e., the same amount of red M&Ms is never guaranteed). This is why it's important to not give much importance to a single sample unless you are taking more samples to get closer to the true proportion.
 
 When finished, save your work, switch to GitHub Desktop, then add, commit and push your changes to GitHub and submit the URL of the notebook in ELMS.
