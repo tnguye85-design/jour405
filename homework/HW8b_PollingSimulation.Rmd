@@ -58,12 +58,16 @@ The sample estimate (0.16) was pretty close to the population proportion (0.10).
 Use `set.seed(1966)` and sample 500 rows. Save it as `sample_500`. Calculate the proportion of White Evangelical respondents in this sample.
 
 ```{r}
+set.seed(1966)
 
+sample_500 <- ces |> sample_n(500)
+
+sample_500 <- mean(sample_500$evangelical) 
 ```
 
 Did the larger sample improve the estimate? How does the improvement compare to what you saw in class?
 
-ANSWER HERE
+The larger sample did  improve the estimate. The proportion of White Evangelical respondents with a sample size of 500 decreased to 0.09, making the larger sample size 0.01 away from the population proportion. In the unaffiliated polling simulation, in the three times I set a different set for the larger population the results never left the 0.3 range, which represented an accurate estimate to the population proportion. 
 
 ### Task 6: Simulate many polls
 
