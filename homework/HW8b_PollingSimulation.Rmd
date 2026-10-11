@@ -35,7 +35,7 @@ population_proportion <- mean(ces$evangelical)
 
 Write down this value. How does it compare to the unaffiliated proportion (about 0.36) from the in-class activity?
 
-The population proportion for respondents identifying as White Evangelical is 0.10. This represents a smaller percentage compared to the unaffiliated proportion.
+The population proportion for respondents identifying as White Evangelical is 0.10. This represents a smaller percentage compared to the unaffiliated proportion. 0.10 is farther from the true proportion of 50%.
 
 ### Task 4: Take a single small sample
 
