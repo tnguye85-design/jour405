@@ -95,7 +95,21 @@ simulations_500 <- simulate_polls(ces, 500)
 Create two histograms side by side using the code structure from class. Add a vertical line at `population_proportion`. Make sure to update the title and subtitle to reflect that this simulation is about White Evangelicals.
 
 ```{r}
+simulations_all <- bind_rows(simulations_50, simulations_500) |> 
+  mutate(sample_size = paste("n =", sample_size))
 
+ggplot(simulations_all, aes(x = proportion)) +
+  geom_histogram(bins = 30, fill = "steelblue", color = "white") +
+  geom_vline(xintercept = population_proportion, color = "red", linetype = "dashed", linewidth = 1) +
+  facet_wrap(~sample_size) +
+  labs(
+    title = "Distribution of Sample Estimates: White Evangelicals.",
+    subtitle = "Red line = true population proportion. Each histogram shows 1,000 simulated polls.",
+    x = "Sample Proportion",
+    y = "Count",
+    caption = "Source: 2024 Cooperative Election Study"
+  ) +
+  theme_minimal()
 ```
 
 ### Task 8: Reflect on what you see
