@@ -130,6 +130,6 @@ This suggests that the reliability of estimates for smaller subgroups would not 
 
 **Imagine you are covering the 2028 presidential election and a campaign shares a poll showing White Evangelical support at 78%.** The poll sampled 400 people. Based on everything you've seen in this assignment and in class, what would you want to know before reporting that number?
 
-ANSWER HERE
+I would want to know where the poll came from-- what organization and who conducted the polls? I would also want to know how the respondents were selected, specifically if it was random. I would also want to know where the polls were conducted. Maybe they were taken from a community with a high White Evangelical population, but if not, then the location that the poll was taken is also important to look at.
 
 When finished, save your work, switch to GitHub Desktop, then add, commit and push your changes to GitHub and submit the URL of the notebook in ELMS.
