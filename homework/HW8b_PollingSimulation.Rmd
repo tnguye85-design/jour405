@@ -67,7 +67,9 @@ sample_500 <- mean(sample_500$evangelical)
 
 Did the larger sample improve the estimate? How does the improvement compare to what you saw in class?
 
-The larger sample did  improve the estimate. The proportion of White Evangelical respondents with a sample size of 500 decreased to 0.09, making the larger sample size 0.01 away from the population proportion. In the unaffiliated polling simulation, in the three times I set a different set for the larger population the results never left the 0.3 range, which represented an accurate estimate to the population proportion. 
+The larger sample did  improve the estimate. The proportion of White Evangelical respondents with a sample size of 500 decreased to 0.09, making the larger sample size 0.01 away from the population proportion. In the unaffiliated polling simulation, in the three times I set a different set for the larger population the results never left the 0.3 range, which represented an accurate estimate to the population proportion.
+
+The improvement seen in the White Evangelical simulation corroborates the idea that a larger sample will cluster more around the true value. 
 
 ### Task 6: Simulate many polls
 
