@@ -42,12 +42,16 @@ The population proportion for respondents identifying as White Evangelical is 0.
 Use `set.seed(42)` and sample 50 rows from `ces`. Save it as `sample_50`. Calculate the proportion of White Evangelical respondents in your sample.
 
 ```{r}
+set.seed(42)
 
+sample_50 <- ces |> sample_n(50)
+
+population_proportion_small <- mean(sample_50$evangelical) 
 ```
 
 How close is your sample estimate to the population proportion? How does the accuracy compare to what you saw with the unaffiliated group in class?
 
-ANSWER HERE
+The sample estimate (0.16) was pretty close to the population proportion (0.10). In the first polling simulation, the sample estimate (0.32) was also close to the unaffiliated population proportion (0.36). This suggests that sample estimates, when the groups are chosen at random, can be closely accurate to the population proportion. 
 
 ### Task 5: Take a single larger sample
 
