@@ -27,12 +27,15 @@ ces <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/heads/ma
 Create a new column called `evangelical` that is `TRUE` if a respondent's `trad` value is `"White Evangelical"` and `FALSE` otherwise. Then calculate the proportion of the full dataset that is White Evangelical and save it as `population_proportion`.
 
 ```{r}
+ces <- ces |>
+  mutate(evangelical = trad %in% c("White Evangelical"))
 
+population_proportion <- mean(ces$evangelical) 
 ```
 
 Write down this value. How does it compare to the unaffiliated proportion (about 0.36) from the in-class activity?
 
-ANSWER HERE
+The population proportion for respondents identifying as White Evangelical is 0.10. This represents a smaller percentage compared to the unaffiliated proportion.
 
 ### Task 4: Take a single small sample
 
