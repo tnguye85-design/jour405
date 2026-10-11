@@ -116,11 +116,11 @@ ggplot(simulations_all, aes(x = proportion)) +
 
 **Describe the shape of the n=50 histogram.** Is it as symmetric as the unaffiliated histogram from class? Why do you think that is, given that White Evangelicals make up only about 10% of the population?
 
-ANSWER HERE
+Yes, the White Evangelicals histogram is similarly symmetrical to the n=50 unaffiliated histogram. The unaffiliated histogram has data right on the true proportion line. The White Evangelicals histogram doesn't show data on top of the true proportion line, but the two are similar because the data from n=50 is spread along the sample proportion. This may be because the histograms are only showing data for their respective categories, unaffiliated and White Evangelicals. This histogram also has a smaller sample sizes, which is why the data is not tightly clustered around the true proportion line. 
 
 **Compare the n=50 and n=500 histograms for this group.** How much does the distribution change with a larger sample? Is the improvement bigger or smaller than what you saw in class with the unaffiliated group?
 
-ANSWER HERE
+The distribution changes with a larger sample because more samples gives more polls with responses closer to the true proportion; you get more data clustered around the true proportion with a larger sample. This is not a big improvement because the same pattern was seen in the unaffiliated group.   
 
 **A news organization wants to report on White Evangelical voters using a poll of 200 people.** Based on your simulations, roughly how many White Evangelical respondents would that poll be likely to include? What does that suggest about the reliability of estimates for smaller subgroups?
 
