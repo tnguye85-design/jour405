@@ -124,7 +124,9 @@ The distribution changes with a larger sample because more samples gives more po
 
 **A news organization wants to report on White Evangelical voters using a poll of 200 people.** Based on your simulations, roughly how many White Evangelical respondents would that poll be likely to include? What does that suggest about the reliability of estimates for smaller subgroups?
 
-ANSWER HERE
+There would not be that many White Evangelical respondents because they represent a smaller portion of the population.  Religions and non-religions with more identifying respondents (in comparison to White Evangelical respondents) could be randomly pulled. Based on previous simulations, I would estimate that roughly 0.09% of respondents would identify as White Evangelical would be included in a poll of 200 people (maybe more though, since this sample size is larger than sample_50). 
+
+This suggests 
 
 **Imagine you are covering the 2028 presidential election and a campaign shares a poll showing White Evangelical support at 78%.** The poll sampled 400 people. Based on everything you've seen in this assignment and in class, what would you want to know before reporting that number?
 
