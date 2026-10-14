@@ -118,7 +118,7 @@ Weekday_zscore finds 33 unusual days, whereas I wasn't able to get an unusual da
 
 ### Task 9: Write 2–3 sentences: How do the two lists of unusual days differ, and what story leads does each suggest? (8 points)
 
-Rail_zscores have a lot more variety in their results, whereas the weekday_zscore results are more successful in narrowing down a list of unusual days. We get a large range in the negatives and to values from 4.4 to 0.007 for rail_zscores, so a story lead could focus on unusual z_scores over work days. For weekday_zscores, a story lead could focus on 
+Rail_zscores have a lot more variety in their results, whereas the weekday_zscore results are more successful in narrowing down a list of unusual days. We get a large range in the negatives and to values from 4.4 to 0.007 for rail_zscores, so a story lead could focus on unusual z_scores over work days. For weekday_zscores, a story lead could focus on the unusual days over Saturday and Sunday, specifically looking at events or habits could cause higher z-scores/ridership.
 
 ---
 
