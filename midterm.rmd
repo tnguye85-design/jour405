@@ -34,13 +34,23 @@ compliance_stats <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/
 ### Task 2: Calculate the mean, standard deviation, minimum, and maximum of compliance scores. Save the results in a new dataframe called `compliance_stats`. (6 points)
 
 ```{r}
-compliance_stats <- compliance_stats |> summarize(mean = mean(compliance_score), sd = sd(compliance_score), min = min(compliance_score), max = max(compliance_score))
+compliance_stats |> summarize(mean = mean(compliance_score), sd = sd(compliance_score), min = min(compliance_score), max = max(compliance_score))
 ```
 
 ### Task 3: Create a histogram of the compliance scores with a vertical line showing the mean. Include a headline and label the x and y axes. (8 points)
 
 ```{r}
-# your code here
+compliance_stats |> 
+  ggplot() + 
+  geom_histogram(aes(x = compliance_score), binwidth = 6) +
+  geom_vline(aes(xintercept = mean(compliance_score)), color = "red", linetype = "dashed", size = 1) +
+  geom_vline(aes(xintercept = mean(compliance_score) - sd(compliance_score)), color = "blue", linetype = "dashed", size = 1) +
+  geom_vline(aes(xintercept = mean(compliance_score) + sd(compliance_score)), color = "blue", linetype = "dashed", size = 1) +
+  labs(
+    title = "Montgomery County health inspection compliance scores",
+    x = "Compliance score",
+    y = "Establishment count",
+  )
 ```
 
 ### Task 4: Write 2–3 sentences interpreting what the standard deviation and histogram tell us about the distribution of compliance scores. What would be newsworthy about this distribution? What's the story here? (9 points)
