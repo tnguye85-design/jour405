@@ -166,7 +166,7 @@ Write 4–5 sentences for each of the following questions:
 
 ### Question A: How would you use descriptive statistics and z-scores to identify which pools are genuinely underperforming, and why is that more useful than simply ranking pools by raw attendance? (10 points)
 
-**Write your answer here:**
+We can use z-scores to see days that have the an unusual number of attendance. This method can also be used to examine high attendance records to see when guests usually come in. By comparing these dates, including unusual days, we can see whether or not pools are underperforming or if guests just have certain days they visit. Descriptive statistics like averages, minimums and maximums can also assist in finding days with the highest or lowest attendance records; if there is a pattern in guest visits decreasing, this could mean underperformance by pools.
 
 
 ### Question B: The department collected its attendance figures using a random sample of 60 days per pool rather than tracking every day. What questions would you ask about the sample before relying on these figures for a story? What concerns would you raise in your story? (10 points)
