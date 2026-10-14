@@ -55,8 +55,7 @@ compliance_stats |>
 
 ### Task 4: Write 2–3 sentences interpreting what the standard deviation and histogram tell us about the distribution of compliance scores. What would be newsworthy about this distribution? What's the story here? (9 points)
 
-**Write your answer here:**
-
+This histogram is right-skewed as a result of the high number of establishments with a compliance score of 100 (or values closely within one standard deviation to the right of the mean). The histogram shows that there is a significantly low number of establishments presenting the mean compliance scores (96.3) compared to the high number of establishments with a compliance score of 100. Something newsworthy about this distribution is that more establishments have a compliance score of 100 compared to the average of compliance scores, which shows that establishments in Montgomery County likely pass their health inspections (great for people curious about eating safely!).
 
 ---
 
