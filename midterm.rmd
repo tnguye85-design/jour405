@@ -83,12 +83,12 @@ wmata_zscores <- WMATA_daily_ridership |>
 ### Task 7: Rail ridership varies a lot by day of the week. Using `group_by()` and `mutate()`, add a column called `weekday_zscore` that calculates each day's rail z-score relative to other days with the same `weekday` (for example, a Sunday compared to other Sundays). Remember to `ungroup()` and save the result back to `wmata_zscores`. (8 points)
 
 ```{r}
-accidents <- accidents |>
-  group_by(day_of_week) |>
+wmata_zscores <- wmata_zscores |>
+  group_by(weekday) |>
   mutate(
-    dow_mean = mean(total),
-    dow_sd = sd(total),
-    dow_z_score = (total - dow_mean) / dow_sd
+    mean_WMATA = mean(total),
+    sd_WMATA = sd(total),
+    weekday_zscore = (total - mean_WMATA) / sd_WMATA
   ) |>
   ungroup()
 ```
@@ -96,7 +96,9 @@ accidents <- accidents |>
 ### Task 8: Filter for days where the absolute value of `rail_zscore` is greater than 2, and separately for days where the absolute value of `weekday_zscore` is greater than 2. Arrange each so the most extreme days appear first. How many unusual days does each method find? (5 points)
 
 ```{r}
-# your code here
+weekday_zscore <- weekday_zscore %>%
+  filter(abs(rail_zscore) > 2) %>%
+  arrange(desc(abs(z_score)))
 ```
 
 **How many unusual days does each method find?**
