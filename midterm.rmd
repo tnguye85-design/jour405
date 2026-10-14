@@ -135,20 +135,26 @@ car_thefts <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/h
 ### Task 11: Using `mutate()`, add two columns: `theft_rate`, the 2024 car theft rate per 10,000 residents, and `pct_change`, the percent change in thefts from 2023 to 2024. Save the result back to `md_car_thefts`. (10 points)
 
 ```{r}
-# your code here
+md_car_thefts <- car_thefts |>
+  mutate(theft_rate = thefts_2024)
+
+md_car_thefts <- car_thefts |> 
+  mutate(
+    pct_change = (thefts_2024 - thefts_2023) / thefts_2023 * 100
+  )
 ```
 
 
 ### Task 12: Show the five counties with the highest 2024 theft rate, the five with the largest percent increase, and the five with the largest percent decrease. (5 points)
 
 ```{r}
-# your code here
+Counties with the highest 2024 theft rate include Montgomery County, PG County, Baltimore County (also Baltimore City, if that counts), Anne Arrundel County and Howard County. The five with the largest percent increase was Allegany, Garrett, Queen Anne's, Anne Arrundel and Cecil counties. The largest percent decrease was seen Dorchester, Somerset, Baltimore City, Carroll County and Kent County.
 ```
 
 ### Task 13: Write 2–3 sentences describing what these calculations reveal about car thefts in Maryland. What is the lede of a story based on your findings? (8 points)
 
 **Write your answer here:**
-
+Urban cities are more likely to experience car thefts, based on 2024 reports across Maryland counties. Counties close to the D.C. area, such as Montgomery County and Prince George's County, saw a spike in car thefts in 2024, whereas Kent and Carroll counties had a percent decrease in car thefts from 2023 to 2024.
 
 ---
 
