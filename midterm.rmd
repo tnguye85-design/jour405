@@ -173,6 +173,7 @@ We can use z-scores to see days that have the an unusual number of attendance. T
 
 **Write your answer here:**
 
+How wide was the timeline for the sampling? Does it only include a small number of weeks or does it include years in the pasr? I would also look at seasons. Some months, like June/July, may have higher attendance records than May or August.
 
 ---
 
