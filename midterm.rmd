@@ -66,7 +66,7 @@ Your editor wants you to identify unusual days in WMATA's daily ridership data t
 ### Task 5: Load the WMATA ridership data. (2 points)
 
 ```{r}
-# your code here
+WMATA_daily_ridership <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/wmata_daily.csv")
 ```
 
 ### Task 6: Using `mutate()`, add a column called `rail_zscore` that is the z-score for rail ridership, calculated using the overall mean and standard deviation of all days. Save the result as `wmata_zscores`. (7 points)
