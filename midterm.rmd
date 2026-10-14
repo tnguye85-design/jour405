@@ -28,13 +28,13 @@ The dataset includes the name of the establishment, the number of points for cri
 ### Task 1: Read the data (2 points)
 
 ```{r}
-read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/montco_inspections.csv")
+compliance_stats <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/montco_inspections.csv")
 ```
 
 ### Task 2: Calculate the mean, standard deviation, minimum, and maximum of compliance scores. Save the results in a new dataframe called `compliance_stats`. (6 points)
 
 ```{r}
-# your code here
+compliance_stats <- compliance_stats |> summarize(mean = mean(compliance_score), sd = sd(compliance_score), min = min(compliance_score), max = max(compliance_score))
 ```
 
 ### Task 3: Create a histogram of the compliance scores with a vertical line showing the mean. Include a headline and label the x and y axes. (8 points)
