@@ -129,7 +129,7 @@ Your editor has assigned you a story about car thefts in Maryland and wants you 
 ### Task 10: Load the car thefts data. (2 points)
 
 ```{r}
-# your code here
+car_thefts <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/md_car_thefts.csv")
 ```
 
 ### Task 11: Using `mutate()`, add two columns: `theft_rate`, the 2024 car theft rate per 10,000 residents, and `pct_change`, the percent change in thefts from 2023 to 2024. Save the result back to `md_car_thefts`. (10 points)
