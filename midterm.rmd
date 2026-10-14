@@ -96,18 +96,29 @@ wmata_zscores <- wmata_zscores |>
 ### Task 8: Filter for days where the absolute value of `rail_zscore` is greater than 2, and separately for days where the absolute value of `weekday_zscore` is greater than 2. Arrange each so the most extreme days appear first. How many unusual days does each method find? (5 points)
 
 ```{r}
-weekday_zscore <- weekday_zscore %>%
+wmata_zscores <- wmata_zscores %>%
+  filter(abs(weekday_zscore) > 2) %>%
+  arrange(desc(abs(weekday_zscore)))
+
+wmata_zscores %>%
+  select(weekday, total, weekday_zscore) %>%
+  kable(digits = 2)
+
+weekday_zscore |> %>%
   filter(abs(rail_zscore) > 2) %>%
-  arrange(desc(abs(z_score)))
+  arrange(desc(abs(rail_zscore)))
+
+rail_zscore %>%
+  select(weekday, total, rail_zscore) %>%
+  kable(digits = 2)
 ```
 
 **How many unusual days does each method find?**
-
+Weekday_zscore finds 33 unusual days, whereas I wasn't able to get an unusual dates list from rail_zscore.
 
 ### Task 9: Write 2–3 sentences: How do the two lists of unusual days differ, and what story leads does each suggest? (8 points)
 
-**Write your answer here:**
-
+Rail_zscores have a lot more variety in their results, whereas the weekday_zscore results are more successful in narrowing down a list of unusual days. We get a large range in the negatives and to values from 4.4 to 0.007 for rail_zscores, so a story lead could focus on unusual z_scores over work days. For weekday_zscores, a story lead could focus on 
 
 ---
 
