@@ -28,7 +28,7 @@ The dataset includes the name of the establishment, the number of points for cri
 ### Task 1: Read the data (2 points)
 
 ```{r}
-# your code here
+read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/montco_inspections.csv")
 ```
 
 ### Task 2: Calculate the mean, standard deviation, minimum, and maximum of compliance scores. Save the results in a new dataframe called `compliance_stats`. (6 points)
