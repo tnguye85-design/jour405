@@ -135,7 +135,7 @@ sleep_stats |>
   b) "Students May Not Be Getting Enough Sleep, Survey Suggests"
   c) "Survey: Students Getting Recommended Amount of Sleep"
 
-ANSWER HERE
+The third headline is justified by the headline because the CI is at or above 7. The first one cannot be justified because the average may not be within the confidence interval, and the second headline is false because the mean and confidence intervals both suggest that students (based on the sample) are getting a recommended 7 hours. 
 
 ### Task 7: What about a bigger sample?
 
