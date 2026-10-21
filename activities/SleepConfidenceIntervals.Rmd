@@ -41,7 +41,7 @@ sleep_stats
 
 **Answer this question:** Based on these numbers alone, what would you tell the health reporter? Why might it be risky to report the average as the definitive answer for all students?
 
-ANSWER HERE
+The mean hours shows that, on average, the sample shows that students meet the CDC's recommendation of seven hours of sleep. I would tell a health reporter that it's risky to report this average as the definitive answer for all students because the data doesn't account for every night of sleep. There could be variation of sleep hours throughout the week and also individually, especially as the mean doesn't specifically represent everyone's hours of sleep.
 
 ### Task 3: Calculate the standard error
 
