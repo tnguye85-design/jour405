@@ -58,7 +58,7 @@ sleep_stats
 
 **Answer this question:** The standard error is much smaller than the standard deviation. Why? What does each one measure?
 
-ANSWER HERE
+The standard error is lower because it measures variability in the sample, whereas standard deviation measures data points clustered around the mean. Furthermore, standard error is lower because it measures what would happen if more samples of the same size were taken. 
 
 ### Task 4: Calculate a 95% confidence interval
 
