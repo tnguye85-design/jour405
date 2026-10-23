@@ -103,7 +103,9 @@ The confidence interval does not support the claim that car thefts are down abou
 
 Let's make a chart showing the data with the mean and the 95% confidence interval. Does this change anything about your answer from Task 3?
 
-PUT ANSWERS HERE
+This chart shows eight data points within the mean; more data points exist outside of this mean, which is something I'm a bit confused about. If more data points exist outside of the horizontal red bar showing the mean, what does this signify?
+
+Still, part of my answer in Task 3 was correct because I guessed that about 350 incidences occurred a month, which was the second claim that could be supported by the confidence interval in Task 5. Give the confidence intervals and the chart displaying 350 in the range of the mean, my initial was validated.   
 
 ```{r}
 # Make a chart with the mean and CI
@@ -136,7 +138,7 @@ In class we learned that MoE = 1/√n × 100 as a quick approximation for polls.
 hypothetical_summary <- tibble(
   mean_thefts = theft_summary$mean_thefts,
   sd_thefts = theft_summary$sd_thefts,
-  months = REPLACE_ME,
+  months = 40,
   se_thefts = sd_thefts / sqrt(months),
   margin_error = qt(0.975, df = months - 1) * se_thefts,
   ci_lower = mean_thefts - margin_error,
