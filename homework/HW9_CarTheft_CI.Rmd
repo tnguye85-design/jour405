@@ -97,7 +97,7 @@ theft_summary |>
 
 **Answer this question:** If a county official claimed "car thefts are down to about 300 per month," does your confidence interval support that claim? What about a claim of 350 per month? Explain how the confidence interval helps you evaluate each claim.
 
-PUT ANSWERS HERE
+The confidence interval does not support the claim that car thefts are down about 300/month because the lower end of the confidence interval is 341.4. The claim that car thefts are down 350/month could be validated because it is under the upper confidence interval and over the lower confidence interval. The first claim cannot be validated because 300 sits outside of the confidence interval's parameters.
 
 ### Task 6: Visualize the data with the confidence interval
 
