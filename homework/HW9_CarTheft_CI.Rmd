@@ -76,7 +76,7 @@ theft_summary
 
 **Answer this question:** Explain in your own words what the margin of error tells us here. If you were writing a story, how would you use this number? For example, how would you complete this sentence: "Prince George's County averages about ___ car thefts per month, plus or minus ___."
 
-PUT ANSWERS HERE
+The margin of error tells us that the true average of Prince George's County car thefts could lie between 341.4 (-34.2) and 409.8 (+34.2). The margin of error gives room to estimate unknown values. I.e., Prince George's County averages about 375.6 car thefts per month, plus or minus 34.2.
 
 ### Task 5: Build the confidence interval
 
