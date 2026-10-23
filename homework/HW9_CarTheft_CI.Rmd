@@ -1,6 +1,6 @@
 ---
 title: "HW9: Car Theft Confidence Intervals & Margin of Error"
-name: REPLACE WITH YOUR NAME
+name: Tien Nguyen
 ---
 
 Your editor wants to know what a "typical" month of car thefts looks like in Prince George's County. Not just the average — she wants to know how confident you can be in that number. Using monthly figures, confidence intervals and margin of error, you'll come up with an answer and decide whether the data supports a clear story. As with the previous homework, provide answers in this notebook when prompted and you will have to fill in values where you see REPLACE_ME. Get started by loading the tidyverse in a new R block.
@@ -10,6 +10,9 @@ Your editor wants to know what a "typical" month of car thefts looks like in Pri
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 # LOAD THE TIDYVERSE
+
+library(tidyverse)
+
 ```
 
 ### Task 2: Load the Prince George's county crime data
@@ -29,7 +32,7 @@ glimpse(car_thefts)
 
 We'll make a line chart using geom_line() to try and illustrate any trend over time. What's your initial reaction to the change in car thefts? Is there a trend? If your editor asked you "how many car thefts happen in a typical month?", what would you say based on this chart alone?
 
-PUT ANSWERS HERE
+Car thefts peaked near 600 incidences around 2023. Initially, I was surprised to see that car thefts relatively declined over time, and this decline would also be part of the trend. Another trend I noticed is that there is a sometimes a plateau of car thefts (in between 2024-2025 and between 2025-2026) before having a relatively dramatic decline closer to the end of the year. Car thefts hit their lowest point in 2026, based on what the chart shows. There'd typically be around 350 car thefts in a typical month if I was looking only at the chart.
 
 ```{r}
 
