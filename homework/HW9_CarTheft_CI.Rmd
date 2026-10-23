@@ -160,7 +160,9 @@ comparison
 
 **Answer this question:** How did the margin of error and confidence interval change? What does this tell you about the tradeoff between having more data and being able to make precise claims? If you were covering crime trends, how many months of data would you want before writing a definitive story?
 
-PUT ANSWERS HERE
+The margin of error and confidence interval decreased with the more data sampled. Having more data decreases the margin of error, which in turn provides a lower confidence interval range. The closer the lower and upper confidence intervals are to each other, the lower the variability and the more precise the claims. 
+
+If covering crime trends, you would want as many months of data as possible to get a more precise claim (maybe about 5-10 years). 
 
 ### Task 8: Reporting with uncertainty
 
@@ -170,7 +172,9 @@ Based on everything you've calculated, answer the following:
 
 2. Your editor says "Just tell me if car thefts are going up or down." Using only the confidence interval (no significance testing yet), what's the most accurate answer you can give? What would you need to do next to answer that question more definitively?
 
-PUT ANSWERS HERE
+1) Car thefts in Prince George's County car thefts, low certainty of true average
+An initial analysis of car thefts using data collected over 32 months in Prince George's County showed car thefts to average around 376 incidences a month. However, the confidence in this average is lower than expected-- the margin of error of +/-34 revealed that the true average could lie between 341 to 408 incidences, data analysis shows.
 
+2) The most accurate answer I could give using only the confidence interval is that car thefts are going up, but this cannot be proven without further data analysis. Since the confidence interval is not that narrow, there is room for the number of car thefts to be increasing. If the confidence interval was in the negatives, then car thefts would be going down. We cannot assume that car thefts have stayed at the same incident rate or decreased without a line chart depicting the pattern. To answer this question more definitively, I'd have to calculate the MoE and confidence intervals with more months and more sample simulations to see if the gap between the confidence intervals got smaller or dropped into the negatives (assuming we're looking for a decrease). 
 
 When you are finished, save your work, switch to GitHub Desktop, then add, commit and push your changes to GitHub and submit the URL of the notebook in ELMS.
