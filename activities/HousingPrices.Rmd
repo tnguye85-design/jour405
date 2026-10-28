@@ -49,8 +49,8 @@ Replace the REPLACE_ME values to calculate the mean, standard deviation and coun
 ```{r}
 new_stats <- home_data |> 
   summarise(
-    mean = mean(REPLACE_ME),
-    sd = sd(REPLACE_ME),
+    mean = mean(sale_price),
+    sd = sd(sale_price),
     n = n()
   )
 
@@ -59,7 +59,9 @@ new_stats
 
 **Answer this question:** How does the new average compare to the prior average of $285,000? How much higher is it in dollar terms? Does that seem like a big difference to you? What else would you want to know?
 
-ANSWER HERE
+The new average ($304,500) is about $19,500 higher than the average of $285,000 before transit lines opened. This is a significant difference based on these numbers alone. I would want to know the route of the light rail line to see if there's an impact on housing prices in other neighborhoods along the route. I'd also want to know housing prices in the past decade and compare them-- were there other events, like a pandemic, that could have made housing prices rise, too?
+
+I would also want to know resident thoughts-- does the rail line create a lot of noise? Safety concerns for kids playing outside? Or does the proximity to public transportation make home values increase?
 
 ### Task 3: Visualize the distribution (1 point)
 
