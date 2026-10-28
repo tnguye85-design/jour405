@@ -197,11 +197,11 @@ You now have all the statistical evidence. But writing the story requires more t
 
 **Part A:** The local officials are going to claim the transit line increased home values. Based on your analysis, is that claim supported? Write 2-3 sentences for the top of your story that accurately reflect both the statistical significance AND the effect size. Don't just echo the officials' talking points — interrogate them.
 
-ANSWER HERE
+The new transit line may not be the singular cause behind rising home values in the neighborhood. While the new average home prices have increased $19.5K, data analysis prior to the transit line shows that the standard deviation of home prices was $32,000 in the neighborhood. While data analysis reveals the new home prices (averaging at $304.5K) are statistically significant, the effect size is only medium-- the prior standard deviation could have placed the average home prices prior to the transit line lower or higher than $285K.
 
 **Part B:** A $19,500 increase is real and statistically significant, but what *else* could explain rising home prices in this neighborhood? List at least two alternative explanations that a good reporter would want to investigate before attributing the increase entirely to the transit line.
 
-ANSWER HERE
+Interior and exterior home renovations could explain rising home prices. Economic inflation can also contribute to higher home prices. A good reporter should look at individual changes to a house, as well as government or economic effects on the housing market to determine if the increase can be entirely attributed to the transit line.   
 
 
 When you are finished, save your work, switch to GitHub Desktop, then add, commit and push your changes to GitHub and submit the URL of the notebook in ELMS.
