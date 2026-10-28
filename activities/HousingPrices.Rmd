@@ -107,8 +107,8 @@ This is where we formally test the officials' claim. Fill in the REPLACE_ME valu
 
 **Hypotheses:**
 
-- **H₀ (Null):** REPLACE_ME
-- **H₁ (Alternative):** REPLACE_ME
+- **H₀ (Null):** There is no meaningful real difference in property values in this neighborhood.
+- **H₁ (Alternative):** There is a change in property values in this neighborhood.
 
 ```{r}
 # Set the significance level
