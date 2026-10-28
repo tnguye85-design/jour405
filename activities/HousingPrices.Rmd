@@ -157,7 +157,7 @@ story_stats
 
 **Answer this question:** The 95% confidence interval tells us the range where the true average home price likely falls. Does that range include the old average of $285,000? What does that tell you?
 
-The upper and lower confidence intervals don't include the old average of $285,000.
+The upper and lower confidence intervals don't include the old average of $285,000. This tells you that the result is statistically significant and is worth examining why/how. This also tells us further that $285,000 can no longer accurately represent the true population mean.
 
 ### Task 6: Calculate the effect size (3 points)
 
