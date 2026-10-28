@@ -107,7 +107,7 @@ results
 
 **Answer this question:** Based on the p-value, can we reject the null hypothesis? What does this tell the police chief — and what does it NOT tell him?
 
-ANSWER HERE
+Since the p-value (1e-06) is less than alpha (0.05), this result is significant and can therefore be used to reject the null hypothesis. It is likely there is a change, but what this does not tell the police chief that the alternative hypothesis can be confirmed. It also does not tell him what causes the change.
 
 ### Task 6: Visualize the results
 
