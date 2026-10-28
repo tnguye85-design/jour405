@@ -140,7 +140,7 @@ The formula is: d = (baseline mean - sample mean) / baseline standard deviation
 Replace the REPLACE_ME values.
 
 ```{r}
-effect_size <- (REPLACE_ME - summary_stats$sample_mean) / REPLACE_ME
+effect_size <- (baseline_mean - summary_stats$sample_mean) / baseline_sd
 
 effect_size_interpretation <- case_when(
   abs(effect_size) < 0.2 ~ "Negligible",
@@ -159,7 +159,7 @@ tibble(
 
 **Answer this question:** The result is statistically significant, but the effect size is small. In practical terms, the improvement is about 25 seconds per call. The police chief is claiming success. Would you write a story saying the program works? How would you frame the findings honestly — acknowledging both that the improvement is real AND that it's small?
 
-ANSWER HERE
+I would write that there is a small improvement. I would be honest in saying that the response time doesn't decrease by a significant amount of minutes, but that those 25 seconds could be important in saving someone's life or catching a suspect. Every second matters in response time! So yes, there is success in the program decreasing response time. 
 
 ### Task 8: The journalist's framework (5 points)
 
@@ -172,15 +172,16 @@ Apply this framework to the community policing data:
 
 **Question 1:** Write 1-2 sentences answering whether the result is statistically significant and how you know.
 
-ANSWER HERE
+The result is statistically significant because the effect size 0.283 < 0.5, which results in a small interpretation.
 
 **Question 2:** Write 1-2 sentences answering whether the result is meaningfully significant. Consider: the program cost the city $2 million to implement. Is a 25-second improvement in response times worth that investment? What context would you need to answer that question?
 
-ANSWER HERE
+The result is not meaningfully significant with the information we currently. The 25-second improvement is not worth $2 million from the city. For an investment that large, there would have to be a higher improvement in response time to justify that amount of money going into the program. The context I would need to answer this question further is what the program actual entails-- are officers getting technology or equipment? New police vehicles? More training? Maybe knowing that could justify what the $2 million is going towards. 
 
 **Question 3:** Write a headline and a 2-3 sentence lede for a story about these findings. Your text should accurately reflect both the statistical significance and the effect size — don't let the police chief's framing drive the story if the data tells a more nuanced one.
 
-ANSWER HERE
+Westbrook Police Department minorly improves response time, policing program
+A new community policing program enacted by the Westbrook Police Department shows a small improvement in response times to 911 calls. The program, which cost the city $2 million, shows an approximately 25-second difference in old and response times, data analysis reveals. The average response time of 8.2 minutes before the program has decreased to 7.8 minutes with the new program, according to data analysis of 20 randomly selected emergency calls made to WPD after the program began. 
 
 
 When you are finished, save your work, switch to GitHub Desktop, then add, commit and push your changes to GitHub and submit the URL of the notebook in ELMS.
