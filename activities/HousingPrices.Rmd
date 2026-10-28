@@ -65,7 +65,7 @@ I would also want to know resident thoughts-- does the rail line create a lot of
 
 ### Task 3: Visualize the distribution (1 point)
 
-Let's make a histogram of the new home prices with a reference line showing the old average. This helps us see the spread of the data and where the prior average falls relative to the new sales.
+Let's make a histogram of the new home prices with as reference line showing the old average. This helps us see the spread of the data and where the prior average falls relative to the new sales.
 
 ```{r}
 # Function to format currency values
