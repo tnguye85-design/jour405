@@ -112,13 +112,13 @@ This is where we formally test the officials' claim. Fill in the REPLACE_ME valu
 
 ```{r}
 # Set the significance level
-alpha <- REPLACE_ME
+alpha <- 0.05
 
 # Perform a one-sample t-test
 # Since we want to know if home values INCREASED, we use alternative = "greater"
 t_test_result <- t.test(
   home_data$sale_price,
-  mu = REPLACE_ME,
+  mu = prior_mean,
   alternative = "greater"
 )
 
