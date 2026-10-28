@@ -99,7 +99,7 @@ ggplot(home_data, aes(x = sale_price)) +
 
 **Answer this question:** Look at where the old average (red dashed line) falls relative to the new sales. How many of the 14 homes sold for more than the old average? What does the histogram tell you about the spread of the new prices?
 
-ANSWER HERE
+All of the 14 homes sold for more than the old average. The histogram shows that new prices are increasingly more expensive than the previous average, but that more homes (of the 14 sampled) sold with prices closer to the previous average.
 
 ### Task 4: Set up and perform a hypothesis test (2 points)
 
