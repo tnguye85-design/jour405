@@ -187,7 +187,9 @@ tibble(
 
 **Answer this question:** The effect size is "medium." In dollar terms, the average increase is about $19,500. But remember that the standard deviation of home prices in this neighborhood was $32,000 *before* the transit line — meaning prices already varied by tens of thousands of dollars from sale to sale. Given that context, does a $19,500 increase seem large or modest? How does the effect size help you think about this differently than just looking at the dollar amount?
 
-ANSWER HERE
+The $19,500 increase looks modest given that the prior standard devitation was $32,000. With the prior standard deviation being so large, there's a likelihood that home prices prior to the transit line could have landed in the range of the standard deviation. 
+
+Looking at the dollar amount is not as efficient in interpreting effect size compared to what Cohen's d can show. Seeing the medium effect size helps understand the impact of the statistical significance, whereas just looking at the dollar amount simply provides values rather than deeper examination of how meaningful the significance is.  
 
 ### Task 7: What's the story? (6 points)
 
