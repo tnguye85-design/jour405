@@ -127,7 +127,7 @@ t_test_result
 
 **Answer this question:** Look at the p-value. Is it less than our alpha of 0.05? What does this mean for our null hypothesis — can we reject it? What can we now say about the officials' claim?
 
-ANSWER HERE
+Yes, the p-value of 0.0000181 is less than the alpha of 0.05, so there is a statistically significant result. This means we can reject the null hypothesis that claims there is no meaningful real difference in property values in this neighborhood. We can say there is a change, but cannot say what caused it or what way the change leans (if there is a decrease or increase in property values).
 
 ### Task 5: Interpret the results with a confidence interval (2 points)
 
