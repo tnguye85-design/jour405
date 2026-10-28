@@ -22,9 +22,9 @@ library(tidyverse)
 
 Before we run any tests, we need to state our hypotheses. The null hypothesis is what we assume to be true until we have evidence otherwise — like "innocent until proven guilty." Fill in the REPLACE_ME values.
 
-**Null Hypothesis (H₀):** REPLACE_ME
+**Null Hypothesis (H₀):** There is no meaningful real difference in response time.
 
-**Alternative Hypothesis (H₁):** REPLACE_ME
+**Alternative Hypothesis (H₁):** There is a change in response change.
 
 ```{r}
 # Response times (in minutes) after the community policing program
