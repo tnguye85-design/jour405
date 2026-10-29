@@ -60,11 +60,11 @@ Let's see the two periods side by side with their confidence intervals. Replace 
 period_summary <- car_thefts |>
   group_by(period) |>
   summarize(
-    mean_thefts = mean(REPLACE_ME),
+    mean_thefts = mean(total),
     sd_thefts = sd(total),
     months = n(),
     se_thefts = sd_thefts / sqrt(months),
-    margin_error = qt(0.975, df = REPLACE_ME - 1) * se_thefts,
+    margin_error = qt(0.975, df = total - 1) * se_thefts,
     ci_lower = mean_thefts - margin_error,
     ci_upper = mean_thefts + margin_error
   )
