@@ -1,6 +1,6 @@
 ---
 title: "HW10: Significance Testing & Effect Size"
-name: REPLACE WITH YOUR NAME
+name: Tien Nguyen
 ---
 
 You previously calculated the mean, margin of error and confidence interval for monthly car thefts in Prince George's County. Your editor now wants to know: it _looks_ like car thefts are decreasing lately, but is that change real, and how big is it? In this assignment, you'll use significance testing and effect size to answer those questions. Load the tidyverse and the data to get started.
@@ -9,6 +9,9 @@ You previously calculated the mean, margin of error and confidence interval for 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+
 # LOAD THE TIDYVERSE
 ```
 
@@ -24,9 +27,9 @@ car_thefts <- read_csv("https://raw.githubusercontent.com/dwillis/jour405/refs/h
 
 We'll split the monthly data into two halves, and then ask whether there's a statistically significant difference between these periods. To do that, we'll use a t-test with our alpha at 0.05. First, fill in the hypotheses, then replace the REPLACE_ME values in the code.
 
-**Null Hypothesis:** REPLACE_ME
+**Null Hypothesis:** There is no change in car theft trends.
 
-**Alternative Hypothesis:** REPLACE_ME
+**Alternative Hypothesis:** There is a change in car theft trends.
 
 ```{r}
 
