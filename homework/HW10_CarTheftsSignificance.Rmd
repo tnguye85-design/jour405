@@ -64,7 +64,7 @@ period_summary <- car_thefts |>
     sd_thefts = sd(total),
     months = n(),
     se_thefts = sd_thefts / sqrt(months),
-    margin_error = qt(0.975, df = total - 1) * se_thefts,
+    margin_error = qt(0.975, df = 28.835 - 1) * se_thefts,
     ci_lower = mean_thefts - margin_error,
     ci_upper = mean_thefts + margin_error
   )
