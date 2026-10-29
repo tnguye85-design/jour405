@@ -88,7 +88,7 @@ ggplot(aes(x = period, y = mean_thefts, fill = period)) +
 
 **Answer this question:** Look at the error bars (confidence intervals) on the chart. Do they overlap? What does that tell you about whether the difference between the two periods is real?
 
-PUT ANSWERS HERE
+Yes, the error bars overlap with their respective bars. This suggests that the difference between the two periods is not statistically significant. 
 
 ### Task 4: Calculate the effect size (5 points)
 
