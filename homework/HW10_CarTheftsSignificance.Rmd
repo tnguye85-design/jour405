@@ -136,7 +136,7 @@ tibble(
 
 The effect size is meaningful based on Cohen's d, which interpreted a large effect size. The other effect sizes were not as meaningful, so their significance required more questioning and could be attributed to external factors. For example, the response times were not as impactful to the community, and the small effect size could not determine a meaningful  improvement in response times for the community. Housing prices had a medium effect size, but the impact on the neighborhood still required questioning as to other factors (e.g., inflation, location, renovations) that could have increased average house prices.
 
-For a large effect size, 
+For a large effect size, a story could describe how there is a real, meaningful decrease in car thefts and that decrease is not due to chance. 
 
 ### Task 5: Putting it all together (7 points)
 
