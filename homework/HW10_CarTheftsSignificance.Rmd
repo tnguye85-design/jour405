@@ -49,7 +49,7 @@ t_test_periods
 
 **Answer this question:** What is the p-value? Is it less than 0.05? Can we reject the null hypothesis? What does this tell your editor?
 
-PUT ANSWERS HERE
+The p-value is 0.0000214 < 0.05. Since the p-value is less than 0.05, the result is significant and we can reject the null hypothesis. By rejecting the null hypothesis, this tells the editor there is a change in car thefts, but we cannot exactly say what causes the change or if the car thefts are decreasing. 
 
 ### Task 3: Visualize the comparison (4 points)
 
