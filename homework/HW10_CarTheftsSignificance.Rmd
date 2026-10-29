@@ -88,7 +88,7 @@ ggplot(aes(x = period, y = mean_thefts, fill = period)) +
 
 **Answer this question:** Look at the error bars (confidence intervals) on the chart. Do they overlap? What does that tell you about whether the difference between the two periods is real?
 
-Yes, the error bars overlap with their respective bars. This suggests that the difference between the two periods is not statistically significant. 
+No, the error bars do not overlap. This suggests that there could be a difference between the two periods and that the difference is statistically significant.
 
 ### Task 4: Calculate the effect size (5 points)
 
@@ -109,11 +109,11 @@ second_half_stats <- period_summary |> filter(period == "Second Half")
 pooled_sd <- sqrt(
   ((first_half_stats$months - 1) * first_half_stats$sd_thefts^2 +
    (second_half_stats$months - 1) * second_half_stats$sd_thefts^2) /
-  (first_half_stats$months + second_half_stats$months - REPLACE_ME)
+  (first_half_stats$months + second_half_stats$months - 2)
 )
 
 # Calculate Cohen's d
-cohens_d <- (first_half_stats$mean_thefts - REPLACE_ME) / pooled_sd
+cohens_d <- (first_half_stats$mean_thefts - second_half_stats$mean_thefts) / pooled_sd
 
 # Interpret it
 effect_label <- case_when(
@@ -134,7 +134,9 @@ tibble(
 
 **Answer this question:** How would you describe this effect size? Compare it to the effect sizes we calculated in class (the response times activity had a small effect, the housing prices activity had a medium effect). What does a large effect size mean for the story you'd write about car thefts?
 
-PUT ANSWERS HERE
+The effect size is meaningful based on Cohen's d, which interpreted a large effect size. The other effect sizes were not as meaningful, so their significance required more questioning and could be attributed to external factors. For example, the response times were not as impactful to the community, and the small effect size could not determine a meaningful  improvement in response times for the community. Housing prices had a medium effect size, but the impact on the neighborhood still required questioning as to other factors (e.g., inflation, location, renovations) that could have increased average house prices.
+
+For a large effect size, 
 
 ### Task 5: Putting it all together (7 points)
 
