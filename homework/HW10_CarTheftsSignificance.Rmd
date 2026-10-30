@@ -144,7 +144,7 @@ You now have three pieces of evidence: the confidence intervals from last week, 
 
 1. In Part 1, your editor asked "just tell me if car thefts are going up or down". Now you have significance testing. Write 2-3 sentences telling your editor the answer, using all three pieces of evidence (CI, p-value, and effect size).
 
-PUT ANSWERS HERE
+Car thefts are going down based on confidence level intervals, a significance test and the effect size. A comparison between two periods shows, based on visualized confidence level intervals, that the second time period's confidence interval of 312.2 does not overlap with the first period's confidence interval of 438.9, so the chance of average number of car thefts in the second period falling into the range of average car thefts for the first period does not occur.
 
 2. Write a headline and a 2-3 sentence lede for a story about car thefts in Prince George's County. Unlike the response times story from class (where the effect was small and the headline needed to be cautious), this is a case where the data strongly supports a clear conclusion. Your writing should reflect that — but still note the limitations (correlation vs. causation, what else might explain the decline).
 
