@@ -92,11 +92,14 @@ ggplot(nonvoters_data, aes(x = weight)) +
 
 **Questions:**
 
-1. What is the range of weights in this dataset? The range is from 0 to 3.04.
+1. What is the range of weights in this dataset?
+The range is from 0 to 3.04.
 
-2. What does it mean when a respondent has a weight of 0.23? What about 3.04? A respondent has a weight of 0.23 has higher representation in the group data, whereas a respondent of 3.04 is underrepresented in the group data. The respondent weight of 3.04. Neither respondents are equally represented in this case.
+2. What does it mean when a respondent has a weight of 0.23? What about 3.04?
+A respondent has a weight of 0.23 has higher representation in the group data, whereas a respondent of 3.04 is underrepresented in the group data. The respondent weight of 3.04. Neither respondents are equally represented in this case.
 
-3. Why might some respondents be weighted more heavily than others? It gives the respondents more accurate representation. When a group is underrepresented, a heavier weight can uplift their responses so they aren't neglected in the group data. 
+3. Why might some respondents be weighted more heavily than others?
+It gives the respondents more accurate representation. When a group is underrepresented, a heavier weight can uplift their responses so they aren't neglected in the group data. 
 
 # Exercise 1: Voter Categories and Weighting
 
@@ -232,7 +235,12 @@ kable(comparison, digits = 1, caption = "Difference Between Weighted and Unweigh
 **Answer These Questions:**
 
 1. Which voter category shows the biggest difference between weighted and unweighted results?
+The rarely/never category shows the biggest difference between weighted and unweighted results, especially when looking at the 'yes' column, which saw a -3.6% decrease. 
 
 2. How might these differences affect reporting on likely voter turnout?
+The number of likely voters may be misconstrued. Depending on how big the sample size is, then the -3.6% decrease of the rarely/never voter category respondents who responded 'yes' may not accurately reflect actual voter turnout. People may not be honest about their responses-- they probably didn't vote, but told the pollsters they did to avoid judgment.
 
 3. Why do you think these differences exist? What does this tell us about who might be over or under-represented in the sample?
+Respondents need to feel comfortable with the question being asked to provide an honest answer. They may feel pressured to say "yes" because that expectation is to vote.
+
+People who have easy access to voting stations may be underrepresented, too. The survey also needs to include out-of-state voters (e.g., college students) and people with disabilities that make waiting for the polls difficult. Voter education can also affect the differences. If people don't have access to voter guides or information on candidates, they may be unswayed.
