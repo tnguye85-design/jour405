@@ -92,11 +92,11 @@ ggplot(nonvoters_data, aes(x = weight)) +
 
 **Questions:**
 
-1. What is the range of weights in this dataset?
+1. What is the range of weights in this dataset? The range is from 0 to 3.04.
 
-2. What does it mean when a respondent has a weight of 0.23? What about 3.04?
+2. What does it mean when a respondent has a weight of 0.23? What about 3.04? A respondent has a weight of 0.23 has higher representation in the group data, whereas a respondent of 3.04 is underrepresented in the group data. The respondent weight of 3.04. Neither respondents are equally represented in this case.
 
-3. Why might some respondents be weighted more heavily than others?
+3. Why might some respondents be weighted more heavily than others? It gives the respondents more accurate representation. When a group is underrepresented, a heavier weight can uplift their responses so they aren't neglected in the group data. 
 
 # Exercise 1: Voter Categories and Weighting
 
