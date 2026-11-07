@@ -58,7 +58,7 @@ nonvoters_data |>
 
 **Question 2:** College graduates are overrepresented in most surveys. Does that appear to be true here? Why might college graduates be more likely to respond to a survey than people with less education?
 
-ANSWER HERE
+It appears true that college graduates were overrepresented because the respondent percentage was 39.9%, whereas the second-most education level among respondents were 'High school or less' at 30.8%. College graduates may be more likely to respond to the survey because of political education attained during their time at school. It could also be attributed to a college education providing more informative voting knowledge (e.g., knowing how to register, where to vote, how to research policies and candidates).     
 
 ## Task 3: Unweighted Voting Intentions by Education (4 points)
 
