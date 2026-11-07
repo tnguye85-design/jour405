@@ -145,7 +145,7 @@ ggplot(viz_data, aes(x = educ, y = percentage, fill = Type)) +
 
 **Question 4:** Which education group shows the biggest shift between weighted and unweighted results? In percentage points, how large is that shift? Does weighting change the story, or does it just change the exact numbers?
 
-ANSWER HERE
+The "High school or less' education group showed the biggest result between weighted and unweighted results. There is a -2.7 percentage point difference. Based on this alone, the weighting doesn't change the story significantly because we still see, weighted or unweighted, that college graduates planned to vote more than other education groups. It only changes the exact numbers.
 
 ## Task 6: The UMD Belonging Survey (8 points)
 
