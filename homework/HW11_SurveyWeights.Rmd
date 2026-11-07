@@ -52,7 +52,7 @@ There are more people who were overrepresented, so their response counted for 0.
 
 ```{r education-distribution}
 nonvoters_data |>
-  count(weight) |>
+  count(educ) |>
   mutate(percentage = round(n / sum(n) * 100, 1))
 ```
 
