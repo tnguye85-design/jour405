@@ -1,6 +1,6 @@
 ---
 title: "HW11: Education Level and Survey Weighting"
-author: "Your Name Here"
+author: "Tien Nguyen"
 ---
 
 ```{r setup, include=FALSE}
@@ -46,13 +46,13 @@ ggplot(nonvoters_data, aes(x = weight)) +
 
 **Question 1:** Most weights cluster near 1.0, but some are much higher or lower. What does a weight of 0.2 tell you about that respondent's group in the sample? What about a weight of 3.5? Why might a pollster assign such extreme weights?
 
-ANSWER HERE
+There are more people who were overrepresented, so their response counted for 0.2. There were less people who were underrepresented, but the sample size was too small so their response had to count for 3.5 instead of the standard 2. Respondents whose votes were weighted 3.5 were heavily underrepresented due to difficulty getting the survey to the group or getting enough participants.  
 
 ## Task 2: Education Distribution in the Sample (3 points)
 
 ```{r education-distribution}
 nonvoters_data |>
-  count(REPLACE_ME) |>
+  count(weight) |>
   mutate(percentage = round(n / sum(n) * 100, 1))
 ```
 
