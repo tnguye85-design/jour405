@@ -1,0 +1,91 @@
+Survey year,Unitid,Institution name,OPEID,Campus ID, Campus Name,Institution Size,Murder/Non-negligent manslaughter,Negligent manslaughter,Sex offenses - Forcible,Rape,Fondling,Sex offenses - Non-forcible,Incest,Statutory rape,Robbery,Aggravated assault,Burglary,Motor vehicle theft,Arson
+2015,162007,Bowie State University,00206200,1,Main Campus,5430,0,0,,1,0,,0,0,2,2,22,0,0
+2015,162283,Coppin State University,00206800,1,Coppin State University,3108,0,0,,2,0,,0,0,1,2,13,5,0
+2015,162584,Frostburg State University,00207200,1,Main Campus,5756,0,0,,7,2,,0,0,0,0,8,0,0
+2015,163851,Salisbury University,00209100,1,Main Campus,8671,0,0,,6,4,,0,0,0,2,3,1,0
+2015,164076,Towson University,00209900,1,Towson University,22284,0,0,,6,1,,0,0,0,2,12,3,0
+2015,163338,University of Maryland Eastern Shore,00210600,1,Main Campus,4465,0,0,,4,2,,0,0,0,0,11,0,0
+2015,163259,University of Maryland- Baltimore,00210400,1,Main Campus,6329,0,0,,0,0,,0,0,0,1,2,0,0
+2015,163268,University of Maryland-Baltimore County,00210500,1,Main Campus,13839,0,0,,10,7,,0,0,0,1,4,1,0
+2015,163286,University of Maryland-College Park,00210300,1,Main Campus,38140,0,0,,15,14,,0,0,1,1,50,28,1
+2016,162007,Bowie State University,00206200,1,Main Campus,5669,0,0,,0,0,,0,0,2,1,12,1,0
+2016,162283,Coppin State University,00206800,1,Coppin State University,2939,0,0,,0,0,,0,0,2,1,13,2,1
+2016,162584,Frostburg State University,00207200,1,Main Campus,5676,0,0,,2,2,,0,0,2,2,5,1,0
+2016,163851,Salisbury University,00209100,1,Main Campus,8748,0,0,,6,2,,0,0,1,0,4,1,0
+2016,164076,Towson University,00209900,1,Towson University,22343,0,0,,8,3,,0,0,1,0,8,0,0
+2016,163338,University of Maryland Eastern Shore,00210600,1,Main Campus,3904,0,0,,7,2,,0,0,1,1,11,0,0
+2016,163259,University of Maryland- Baltimore,00210400,1,Main Campus,6482,0,0,,0,1,,0,0,0,0,0,1,0
+2016,163268,University of Maryland-Baltimore County,00210500,1,Main Campus,13640,0,0,,3,2,,0,0,0,1,5,1,1
+2016,163286,University of Maryland-College Park,00210300,1,Main Campus,39083,0,0,,5,11,,0,0,3,6,17,18,0
+2017,162007,Bowie State University,00206200,1,Main Campus,6148,0,0,,0,0,,0,0,0,7,13,1,0
+2017,162283,Coppin State University,00206800,1,Coppin State University,2893,0,0,,1,0,,0,0,1,1,9,3,0
+2017,162584,Frostburg State University,00207200,1,Main Campus,5396,0,0,,0,1,,0,0,0,0,4,0,0
+2017,163851,Salisbury University,00209100,1,Main Campus,8714,0,0,,2,3,,0,0,1,5,4,0,0
+2017,164076,Towson University,00209900,1,Towson University,22705,0,0,,7,2,,0,0,1,2,1,4,1
+2017,163338,University of Maryland Eastern Shore,00210600,1,Main Campus,3490,0,0,,2,0,,0,0,1,0,10,0,0
+2017,163259,University of Maryland- Baltimore,00210400,1,Main Campus,6703,0,0,,0,1,,0,0,1,0,0,0,0
+2017,163268,University of Maryland-Baltimore County,00210500,1,Main Campus,13662,0,0,,6,2,,0,0,0,0,11,2,0
+2017,163286,University of Maryland-College Park,00210300,1,Main Campus,40521,1,0,,29,4,,0,0,3,3,13,6,3
+2018,162007,Bowie State University,00206200,1,Main Campus,6320,0,0,,2,0,,0,0,2,5,9,1,0
+2018,162283,Coppin State University,00206800,1,Coppin State University,2738,0,0,,1,1,,0,0,0,4,13,0,1
+2018,162584,Frostburg State University,00207200,1,Main Campus,5295,0,0,,3,4,,0,0,2,0,3,0,0
+2018,163851,Salisbury University,00209100,1,Main Campus,8567,0,0,,3,6,,0,0,1,5,0,0,0
+2018,164076,Towson University,00209900,1,Towson University,22923,0,0,,17,7,,0,0,2,3,6,1,0
+2018,163338,University of Maryland Eastern Shore,00210600,1,Main Campus,3193,0,0,,0,2,,0,0,2,0,11,0,0
+2018,163259,University of Maryland- Baltimore,00210400,1,Main Campus,6777,0,0,,0,0,,0,0,3,2,3,0,0
+2018,163268,University of Maryland-Baltimore County,00210500,1,Main Campus,13767,0,0,,8,9,,0,0,3,1,5,0,0
+2018,163286,University of Maryland-College Park,00210300,1,Main Campus,41200,0,0,,28,15,,0,0,1,5,5,25,2
+2019,162007,Bowie State University,00206200,1,Main Campus,6171,0,0,,2,0,,0,0,0,3,12,2,0
+2019,162283,Coppin State University,00206800,1,Coppin State University,2724,0,0,,1,0,,0,0,0,4,13,1,0
+2019,162584,Frostburg State University,00207200,1,Main Campus,5178,0,0,,2,1,,0,1,0,0,1,0,0
+2019,163851,Salisbury University,00209100,1,Main Campus,8617,0,0,,7,5,,0,0,0,1,3,0,0
+2019,164076,Towson University,00209900,1,Towson University,22709,0,0,,8,6,,0,0,5,8,10,0,0
+2019,163338,University of Maryland Eastern Shore,00210600,1,Main Campus,2886,0,0,,3,1,,0,0,4,0,10,1,0
+2019,163259,University of Maryland- Baltimore,00210400,1,Main Campus,6827,0,0,,1,0,,0,0,0,0,3,0,1
+2019,163268,University of Maryland-Baltimore County,00210500,1,Main Campus,13602,0,0,,9,7,,0,0,4,0,14,3,0
+2019,163286,University of Maryland-College Park,00210300,1,Main Campus,40743,0,0,,23,7,,0,0,4,5,22,57,6
+2020,162007,Bowie State University,00206200,1,Main Campus,6250,0,0,,0,0,,0,0,0,0,2,0,0
+2020,162283,Coppin State University,00206800,1,Coppin State University,2348,0,0,,0,0,,0,0,0,1,5,3,0
+2020,162584,Frostburg State University,00207200,1,Main Campus,4857,0,0,,0,0,,0,0,1,0,4,0,0
+2020,163851,Salisbury University,00209100,1,Main Campus,8124,0,0,,0,4,,0,0,0,1,1,0,0
+2020,164076,Towson University,00209900,1,Towson University,21917,0,0,,10,1,,0,0,1,0,2,1,0
+2020,163338,University of Maryland Eastern Shore,00210600,1,Main Campus,2646,0,0,,3,0,,0,0,1,4,7,0,0
+2020,163259,University of Maryland- Baltimore,00210400,1,Main Campus,7137,1,0,,0,0,,0,0,3,1,2,0,0
+2020,163268,University of Maryland-Baltimore County,00210500,1,Main Campus,13497,0,0,,8,6,,0,0,0,0,8,3,0
+2020,163286,University of Maryland-College Park,00210300,1,Main Campus,40709,0,0,,13,0,,0,0,0,0,16,26,0
+2021,162007,Bowie State University,00206200,1,Main Campus,6308,0,0,,5,5,,0,0,0,0,11,1,0
+2021,162283,Coppin State University,00206800,1,Coppin State University,2101,0,0,,1,0,,0,0,0,0,5,1,0
+2021,162584,Frostburg State University,00207200,1,Main Campus,4452,0,0,,2,0,,0,0,0,0,0,0,0
+2021,163851,Salisbury University,00209100,1,Main Campus,7570,0,0,,2,6,,0,0,0,1,7,0,0
+2021,164076,Towson University,00209900,1,Towson University,20856,0,0,,10,5,,0,0,0,5,12,0,0
+2021,163338,University of Maryland Eastern Shore,00210600,1,Main Campus,2384,0,0,,3,1,,0,0,0,2,2,0,0
+2021,163259,University of Maryland- Baltimore,00210400,1,Main Campus,7244,0,0,,1,0,,0,0,1,2,1,1,0
+2021,163268,University of Maryland-Baltimore County,00210500,1,Main Campus,13638,0,0,,9,2,,0,0,0,0,13,2,3
+2021,163286,University of Maryland-College Park,00210300,1,Main Campus,41272,0,0,,20,8,,0,0,0,2,11,33,2
+2022,162007,Bowie State University,00206200,1,Main Campus,6275,0,0,,3,3,,0,0,0,27,12,0,0
+2022,162283,Coppin State University,00206800,1,Coppin State University,2006,0,0,,1,0,,0,0,1,6,1,0,0
+2022,162584,Frostburg State University,00207200,1,Main Campus,4067,0,0,,1,3,,0,0,1,0,0,0,0
+2022,163851,Salisbury University,00209100,1,Main Campus,7123,0,0,,7,5,,0,0,0,0,2,1,0
+2022,164076,Towson University,00209900,1,Towson University,19793,0,0,,11,3,,0,0,1,3,6,1,0
+2022,163338,University of Maryland Eastern Shore,00210600,1,Main Campus,2518,0,0,,2,1,,0,0,0,0,2,0,0
+2022,163259,University of Maryland- Baltimore,00210400,1,Main Campus,6931,0,0,,0,0,,0,0,2,5,1,4,1
+2022,163268,University of Maryland-Baltimore County,00210500,1,Main Campus,13991,0,0,,11,8,,0,0,1,2,4,1,2
+2022,163286,University of Maryland-College Park,00210300,1,Main Campus,40792,0,0,,19,10,,0,0,1,7,11,53,1
+2023,162007,Bowie State University,00206200,1,Main Campus,6408,0,0,,2,3,,0,0,3,10,4,3,0
+2023,162283,Coppin State University,00206800,1,Coppin State University,2101,0,0,,1,0,,0,0,0,0,1,3,0
+2023,162584,Frostburg State University,00207200,1,Main Campus,4075,0,0,,4,2,,0,0,0,0,0,0,0
+2023,163851,Salisbury University,00209100,1,Main Campus,7030,0,0,,3,6,,0,0,1,1,1,0,0
+2023,164076,Towson University,00209900,1,Towson University,19527,0,0,,10,7,,0,0,2,9,5,3,1
+2023,163338,University of Maryland Eastern Shore,00210600,1,Main Campus,2844,0,0,,3,1,,0,0,1,4,5,0,0
+2023,163259,University of Maryland- Baltimore,00210400,1,Main Campus,6667,0,0,,2,0,,0,0,1,5,0,4,0
+2023,163268,University of Maryland-Baltimore County,00210500,1,Main Campus,14148,0,0,,15,7,,0,0,0,0,6,19,0
+2023,163286,University of Maryland-College Park,00210300,1,Main Campus,40813,0,0,,22,14,,0,0,6,5,12,141,1
+2024,162007,Bowie State University,00206200,1,Main Campus,6353,0,0,,3,0,,0,0,0,27,6,1,0
+2024,162283,Coppin State University,00206800,1,Coppin State University,2210,0,0,,0,1,,0,0,1,1,0,4,0
+2024,162584,Frostburg State University,00207200,1,Main Campus,4104,0,0,,2,2,,0,0,0,5,0,0,1
+2024,163851,Salisbury University,00209100,1,Main Campus,7025,0,0,,10,2,,0,0,1,1,6,2,0
+2024,164076,Towson University,00209900,1,Towson University,19401,0,0,,5,5,,0,0,4,3,3,0,0
+2024,163338,University of Maryland Eastern Shore,00210600,1,Main Campus,3177,0,0,,10,7,,0,0,0,3,14,0,0
+2024,163259,University of Maryland- Baltimore,00210400,1,Main Campus,6636,0,0,,1,0,,0,0,1,1,1,6,0
+2024,163268,University of Maryland-Baltimore County,00210500,1,Main Campus,13906,0,0,,10,3,,0,0,2,2,5,27,0
+2024,163286,University of Maryland-College Park,00210300,1,Main Campus,41725,0,0,,10,8,,0,0,0,6,10,287,0
