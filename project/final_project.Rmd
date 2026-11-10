@@ -9,3 +9,7 @@ library(tidyverse)
 
 ```
 
+```{r}
+Crime2025 <- read_csv("Criminal_Offenses_On_campus.csv")
+```
+
