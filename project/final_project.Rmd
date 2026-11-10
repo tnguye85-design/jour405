@@ -9,7 +9,14 @@ library(tidyverse)
 
 ```
 
+
+# Source 1: U.S. Department of Education, Campus Safety and Security (https://ope.ed.gov/campussafety/#/)
+
 ```{r}
 Crime2025 <- read_csv("Criminal_Offenses_On_campus.csv")
 ```
+The data comes from the U.S. Department of Education's Campus Safety and Security Data Analysis Cutting Tool, which allows users to download campus crime and fire data. For this project, I downloaded data from 2015-2024 from all University System of Maryland schools, excluding University of Baltimore (primarily graduate and professional students), University of Maryland, Global Campus (mainly online and does not have a main campus) and Center for Environmental Science (a research center). 
 
+The Department of Education pulls this data from the OPE Campus Safety and Security Statistics website database, where the USM reports their crime and fire statistics annually.
+
+I collected the data using the 'Download Custom Data' tool. I selected the schools I will analyze, made the time frame 2015-2024 (2025 data is not available online yet) and narrowed the crime category down to 'Criminal Offenses - On campus.'
