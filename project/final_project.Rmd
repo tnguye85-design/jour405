@@ -19,7 +19,9 @@ The data comes from the U.S. Department of Education's Campus Safety and Securit
 
 The Department of Education pulls this data from the OPE Campus Safety and Security Statistics website database, where the USM reports their crime and fire statistics annually.
 
-I collected the data using the 'Download Custom Data' tool. I selected the schools I will analyze, made the time frame 2015-2024 (2025 data is not available online yet) and narrowed the crime category down to 'Criminal Offenses - On campus.' The data contains the school names, institution sizes, the survey years and crime categories. The crime categories are Murder/Non-negligent manslaughter, Negligent manslaughter, Sex offenses - Forcible, Rape, Fondling, Sex Offenses - Non-forcible, Incest, Statutory rape, Robbery, Aggravated assault, Burglary, Motor vehicle theft and Arson.
+I collected the data using the 'Download Custom Data' tool. I selected the schools I will analyze, made the time frame 2015-2024 (2025 data is not available online yet), chose 'Con-campus' for the location and narrowed the crime category down to 'Criminal Offenses - On campus.' The data contains the school names, institution sizes, the survey years and crime categories. The crime categories are Murder/Non-negligent manslaughter, Negligent manslaughter, Sex offenses - Forcible, Rape, Fondling, Sex Offenses - Non-forcible, Incest, Statutory rape, Robbery, Aggravated assault, Burglary, Motor vehicle theft and Arson.
 
 
-The columns most important to my analysis are Murder, both Sex offenses, Robbery and Aggravated assault. These will help me analyze violent crimes across multiple situations and environments.
+The columns most important to my analysis are Murder, both Sex offenses, Robbery and Aggravated assault. These will help me analyze violent crimes across multiple situations and environments. The incident counts for these are there, but I will have to turn these into rates-- should I calculate the rates by the institution size provided in the data to get incidents per 1,000 students? Since I'm looking at on-campus incidents, I may need help finding the on-campus student numbers if I run into trouble with that.
+
+The data is in the project file.
