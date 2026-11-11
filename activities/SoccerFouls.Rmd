@@ -48,6 +48,6 @@ matches26 |>
 
 
 ### Task 6: Describe the results of both the correlation calculation and the scatterplot.
-The correlation calcuation (-0.021) suggests a moderately negative correlation. However, the scatterplot shows no correlation, based on the blue line not increasing or decreasing in a specific direction. Because the scatter plot shows no correlation, we cannot determine whether one variable has an effect on the other. Thus, there may be no linear relationship based on the scatterplot.
+The correlation calcuation (-0.021) suggests a negative correlation. However, the scatterplot shows no correlation, based on the blue line not increasing or decreasing in a specific direction. Because the scatter plot shows no correlation, we cannot determine whether one variable has an effect on the other. Thus, there may be no linear relationship based on the scatterplot.
 
 When you are done, save your work, switch to GitHub Desktop, then add, commit and push your changes to GitHub and submit the URL of the notebook in ELMS.
