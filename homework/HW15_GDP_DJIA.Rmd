@@ -41,12 +41,13 @@ GDP_DJIA |>
   ggplot() +
   geom_point(aes(x=DJIA, y=GDP)) +
   geom_smooth(aes(x=DJIA, y=GDP, method="lm"))
+
 ```
 
 ### Task 5: Describe our results
 
 Write a few sentences about the relationship between the DJIA and GDP. Is there a strong correlation between the two variables? What does the scatterplot show?
-
+Based on the correlation calculation of 0.95 and the scatterplot, there is a strong correlation between GDP and DJIA. The scatterplot shows that as GDP rises, DJIA also increases (and vice versa). There are some data points that exist outside of the line, but the scatterplot still visualizes the pattern as increasing rather than having no correlation.
 
 When you are done, save your work, switch to GitHub Desktop, then add, commit and push your changes to GitHub and submit the URL of the notebook in ELMS.
 
