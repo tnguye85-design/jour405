@@ -9,6 +9,16 @@ library(tidyverse)
 
 ```
 
+# Tests I could run
+I think a bar chart would be effective in visualizing violent crime rates across USM campuses. The X-axis could contain the school names, whereas the X-axis shows violent crime rates (I'll have to look at the years of data I have to determine the maximum threshold). I could do year comparisons to analyze if the rates have changed-- maybe comparing a bar chart with 2015 data to a chart with 2024 data. 
+
+My refined hypothesis is: "Across Maryland's four-year public and private nonprofit colleges, is the percentage of students living on campus associated with reported violent crime rates?" I could use percentages instead of rates for these bar charts. The X-axis, in this case, could show the number of students living on campus, but I'm not sure how to incorporate that.
+
+I also want to use confidence interval models. There's an unknown number of violent crimes that may go unreported for unknown reasons. Including confidence intervals would acknowledge that the data provided in this link (https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/oncampus_crime_campus_year.csv) could not be entirely accurate. To do this, though, would I make confidence interval models for each school? Is there a better way to portray this in one model?
+
+I could also do a linear regression model to see if there's a correlation between percentage of students living on campus and violent crime rates. This would help me visualize if there is any correlation-- and if there is-- how strong or weak it is.
+
+I was wondering if a t-test would be appropriate and how I could conduct that across all the schools. Based on the results, I could interpret whether or not the null hypothesis, but if we do fail to reject the null hypothesis, what would that null hypothesis be? Saying "there is no change" doesn't seem to fit.
 
 # Source 1: U.S. Department of Education, Campus Safety and Security (https://ope.ed.gov/campussafety/#/)
 
