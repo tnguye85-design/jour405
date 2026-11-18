@@ -100,7 +100,7 @@ cat("  Adjusted R-squared:", summary(model_filtered)$adj.r.squared, "\n")
 
 How did removing those schools change the model? Did the coefficient change direction? Did the p-value or R-squared improve meaningfully? What does this tell you about the influence of suspicious data values on a regression model?
 
-In removing the schools with a FARMS pct of 100, all of the values we examined increased to be more significant thn the original dataset. The coefficient of 0.4040037 means that the relationship is positive and the size of the relationship is moderate. The p-value of 0.04292969 means we reject th hull hypothesis and that the relationship is statistically significant. The adjusted r-squared here 
+In removing the schools with a FARMS pct of 100, all of the values we examined increased to be more significant thn the original dataset. The coefficient of 0.4040037 means that the relationship is positive and the size of the relationship is moderate. The p-value of 0.04292969 means we reject th hull hypothesis and that the relationship is statistically significant. The adjusted r-squared here means that there is still a low explanatory factor between the relationship of FARMS percentage and test scores.
 
 
 ### Task 5: Even the Better Model Has Problems
