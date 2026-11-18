@@ -143,4 +143,6 @@ You've now run two models, examined the data quality and seen that even a cleane
 
 Write a short story pitch (3-5 sentences) that addresses the following: Does the data support or contradict the claim? What data quality issues did you find? What would you need - different data, a different model, additional reporting - before you could responsibly publish a story about this claim? Who would you call first?
 
-ANSWER HERE
+Despite the school board member's claim that the schools with fewer students on free and reduced-price meals performing better on standardized math tests, the models I ran show weak R-squared values, which suggests low explanatory factors in the variability of the test scores. The models contradict the school board member's claims.
+
+To test the school board's member claim, we'd have to look at other factors that could explain the variability-- school conditions (would poorly-maintained vs. properly-maintained schools affect a student's learning?); teacher pay (could teachers who are paid less have less resources for their students to perform well? And vice versa.); different teaching style across schools. I would reach out to math teachers themselves to talk about their classroom observations, what feedback they've received from parents/students and whether or not they feel like they can sufficiently help their stduents perform well given the resources they do or don't have. 
