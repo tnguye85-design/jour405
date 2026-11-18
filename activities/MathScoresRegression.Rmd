@@ -68,9 +68,9 @@ The **p-value** tells you whether the relationship is statistically significant.
 
 Report all three values and describe what they tell you. Does this model support the school board member's claim? Is this even a model worth using?
 
-The p-value of 0.1225 says that the relationship is not statistically significant. The results likely occurred due to chance. The adjusted r-squared (2.5%) means that there is a low explanatory factor between the variables. The FARMS pct coefficient (0.12349) means that the relationship is positive but the size of the relationship is tiny.
+The p-value of 0.1225 says that the relationship is not statistically significant. The results likely occurred due to chance. The adjusted r-squared (2.5%) means that there is a low explanatory factor between the variables. This r-square being so low suggests that the explanatory factor likely does not explain the result at all. The FARMS pct coefficient (0.12349) means that the relationship is positive but the size of the relationship is tiny.
 
-The model doesn't support the school board member's claim because we see the variables have a low correlation with each other and that the results more likely happened because of chance rather than FARMS eligibility affecting scores of standardized math tests.
+The model doesn't support the school board member's claim because we see the variables have a low correlation with each other and that the results more likely happened because of chance rather than FARMS eligibility affecting scores of standardized math tests. This model may not be worth using unless we know the other factors affecting test scores and FARMS eligibility.
 
 
 ### Task 4: What's Driving the Problem? Filter and Rerun.
