@@ -100,7 +100,7 @@ cat("  Adjusted R-squared:", summary(model_filtered)$adj.r.squared, "\n")
 
 How did removing those schools change the model? Did the coefficient change direction? Did the p-value or R-squared improve meaningfully? What does this tell you about the influence of suspicious data values on a regression model?
 
-In removing the schools with a FARMS pct of 100, all of the values we examined increased to be more significant thn the original dataset. The coefficient of 0.4040037 means that the relationship is positive and the size of the relationship is moderate. The p-value of 0.04292969 means we reject th hull hypothesis and that the relationship is statistically significant. The adjusted r-squared here means that there is still a low explanatory factor between the relationship of FARMS percentage and test scores.
+In removing the schools with a FARMS pct of 100, all of the values we examined increased to be more significant thn the original dataset. The coefficient of 0.4040037 means that the relationship is positive and the size of the relationship is moderate. The p-value of 0.04292969 means we reject th hull hypothesis and that the relationship is statistically significant. The adjusted r-squared here means that there is still a low variation/low explanatory factor between the relationship of FARMS percentage and test scores.
 
 
 ### Task 5: Even the Better Model Has Problems
@@ -134,7 +134,7 @@ head(schools_filtered |> select(1, `FARMS Pct`, `% Met or Exceeded Math Expectat
 
 What are the largest residuals? Given the model's weak R-squared, how much confidence would you have in labeling these schools as over- or under-performers? Why?
 
-ANSWER HERE
+Gulph (-36.66), Hereford (-32.53) and Whitemarsh (-30.80) Elementary Schools have the largest residuals, but the weak R-squared makes me feel unconfident in labeling these as underpreformers. While the data says that only a fraction of their students met the predicted met or exceeded math expectations. We can't determine whether or not FARMS percentage makes students perform higher on standardized tests because the R-squared shows a low variabiity in the data and explanation for the relationship. 
 
 
 ### Task 6: Write the Story Pitch
