@@ -50,7 +50,7 @@ schools |>
 
 Describe what you see. Is there a clear trend? Does the regression line look like it represents the data well, or does it seem to be pulled in an odd direction? Connect what you observed in Task 1 to what you see here.
 
-ANSWER HERE
+There is not a clear trend; the regression line doesn't represent the data well because it does not neatly follow the data points, as the data points are clustered without a clear pattern. It seems to be pulled towards the upper-end where the FARMS percentage is at 100%, but this doesn't represent the data points acattered around the lower end of the graph.
 
 
 ### Task 3: Run the Regression Model
