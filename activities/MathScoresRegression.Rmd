@@ -32,7 +32,7 @@ schools |> arrange(`FARMS Pct`) |> head(10)
 
 Look at the distribution of FARMS percentages. Do any values look unusual or suspicious? What might it mean if a school has a FARMS percentage of exactly 100? Write two or three sentences describing what you see and whether anything concerns you.
 
-ANSWER HERE
+There are values on the upper-end of the data set that is pulling the data highly upwardss; some values are very low, such as the minimum of 10.66. A school's FARMS percentage of exactly 100 means all students are eligible for FARMs. This data isn't very normally distributed, and there are some schools with a low FARMs percentage who either met or exceeded the math expectations compared to schools with 100% FARMs percentage that had a higher percentage of students who met or exceeded math expectations.
 
 
 ### Task 2: Create a Scatterplot and Describe the Results
