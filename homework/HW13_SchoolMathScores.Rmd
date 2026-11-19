@@ -50,7 +50,11 @@ schools |>
 
 Describe what you see. Then compare this scatterplot specifically to the Pennsylvania one: what differences do you notice in the direction, strength, and spread of the relationship? The two counties share a name and are both suburban — what might explain why they look so different?
 
-I see a strong negative correlation between FARMS percentage and percentage of students who met or exceeded math expectations. In the PA schools scatterplot, the data was heavily skewed to the right because of some outliers, thus giving it a moderate postive relationship between the variables. Most of the data for the PA schools clustered with no correlation on to the low-end of the x-axis, but the extreme outliers pulled the regression line towards the right where FARMS percentage was at 100%.
+I see a strong negative correlation between FARMS percentage and percentage of students who met or exceeded math expectations. The scatterplot shows that as the percentage of students who receive FARMS increases, students who meet or exceed math expectations decreases. 
+
+In the PA schools scatterplot, the data was heavily skewed to the right because of some outliers, thus giving it a moderate positive relationship between the variables. Most of the data for the PA schools clustered with no correlation on to the low-end of the x-axis, but the extreme outliers pulled the regression line towards the right where FARMS percentage was at 100%.
+
+Although the counties share a name and are suburban, the difference shown in the scatterplots could be attributed to different math curriculums, teaching styles, teacher pay and the school conditions (could a school in worse condition affect a student's productivity or material engagement?). How much the school district invests in the students differs, which could also explain why the data is distributed differently.
 
 
 ### Task 3: Linear Regression Model (5 points)
@@ -58,7 +62,7 @@ I see a strong negative correlation between FARMS percentage and percentage of s
 Replace the REPLACE_ME value with the correct variable name to run a linear regression model predicting math scores from FARMS percentage.
 
 ```{r}
-model <- lm(`REPLACE_ME` ~ `FARMS Pct`, data = schools)
+model <- lm(`% Met or Exceeded Math Expectations` ~ `FARMS Pct`, data = schools)
 summary(model)
 ```
 
