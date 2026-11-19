@@ -68,7 +68,7 @@ summary(model)
 
 Report the three key statistics: the p-value, the Adjusted R-squared, and the coefficient for FARMS Pct. Then interpret them together — not separately. What does the combination of these three numbers tell you about the relationship between poverty and math scores in Montgomery County, Md.? Is this model worth using? How does it compare to the Pennsylvania model?
 
-ANSWER HERE
+The p-value is < 0.00000000000000022, adjusted R-squared is 0.6734 and the coefficient for FARMS percentage is 0.59511. The p-value suggests that the relationship is statistically significant, and we can reject the null hypothesis. The adjusted R-value (converted to 67.34%) suggests that 67.34% of the variance can be attributed to the independent variable, so that implies a moderately strong explanatory factor between the variables. 
 
 
 ### Task 4: Identifying Schools with the Biggest Residuals (6 points)
