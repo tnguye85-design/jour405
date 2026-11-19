@@ -1,6 +1,6 @@
 ---
 title: "Identifying Schools with Biggest Differences in Math Test Scores, Part 2"
-author: "YOUR NAME"
+author: "Tien Nguyen"
 ---
 
 ```{r}
@@ -30,7 +30,9 @@ schools |> arrange(desc(`FARMS Pct`)) |> head(10)
 
 Are there any data quality issues like the ones you found in the Pennsylvania data? How does the distribution of FARMS percentages compare between the two counties? Note anything that concerns you or gives you confidence in the data.
 
-ANSWER HERE
+In the PA county, schools with a higher percentage of students receiving free and reduced-priced meals performed better on standardized test scores than the MD county with a higher percentage of students receiving FARMS. For example, Broad Acres Elementary in MD has a FARMS percentage of 96.0% and 39.4% of their students met or exceeded math expectations; Barth Elementary School in PA has a FARMS percentage of 100% and 60.3% of their students met or exceeded math expectations. This isn't necessarily a data quality issue, but it does show an inconsistency with the models that don't hold up the PA school board member's claim.
+
+I would have more confidence in the data if I knew how many students were enrolled in these schools or who took the standardized math tests. 
 
 
 ### Task 2: Create a Scatterplot and Compare (5 points)
@@ -39,7 +41,7 @@ Replace the REPLACE_ME value with the correct variable name to create a scatterp
 
 ```{r}
 schools |>
-  ggplot(aes(x = `REPLACE_ME`, y = `% Met or Exceeded Math Expectations`)) +
+  ggplot(aes(x = `FARMS Pct`, y = `% Met or Exceeded Math Expectations`)) +
   geom_point() +
   geom_smooth(method = "lm", se = FALSE, color = "red") +
   labs(x = "FARMS Percentage", y = "% Met or Exceeded Math Expectations",
