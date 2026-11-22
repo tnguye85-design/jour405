@@ -68,7 +68,7 @@ summary(model)
 
 Report the three key statistics: the p-value, the Adjusted R-squared, and the coefficient for FARMS Pct. Then interpret them together — not separately. What does the combination of these three numbers tell you about the relationship between poverty and math scores in Montgomery County, Md.? Is this model worth using? How does it compare to the Pennsylvania model?
 
-The p-value is < 0.00000000000000022, adjusted R-squared is 0.6734 and the coefficient for FARMS percentage is 0.59511. The p-value suggests that the relationship is statistically significant, and we can reject the null hypothesis. The adjusted R-value (converted to 67.34%) suggests that 67.34% of the variance can be attributed to the independent variable, so that implies a moderately strong explanatory factor between the variables. 
+The p-value is < 0.00000000000000022, adjusted R-squared is 0.6734 and the coefficient for FARMS percentage is 0.59511. The p-value suggests that the relationship is statistically significant, and we can reject the null hypothesis. The adjusted R-value (converted to 67.34%) suggests that 67.34% of the variance can be attributed to the independent variable, so that implies a moderately strong explanatory factor between the variables. The coefficient says that there is a moderate-to-strong relationship between the variables, and that the size of the relationship is moderate.  
 
 
 ### Task 4: Identifying Schools with the Biggest Residuals (6 points)
@@ -78,9 +78,9 @@ Replace the REPLACE_ME values with the correct variable names to calculate predi
 ```{r}
 schools <- schools |>
   mutate(
-    predicted = predict(REPLACE_ME),
+    predicted = predict(model),
     residual = `% Met or Exceeded Math Expectations` - predicted,
-    abs_residual = abs(REPLACE_ME)
+    abs_residual = abs(residual)
   ) |>
   arrange(desc(abs_residual))
 
@@ -94,7 +94,12 @@ For each of the two schools, answer:
 - Does anything in that profile help explain why the school is over- or under-performing the model?
 - What would your first reporting question be to the principal of that school?
 
-ANSWER HERE
+The school with the largest positive residual is Fox Chapel Elementary (residual of 29.99/30), and the school with the largest negative residual is Germantown Elementary (-28.08). 
+
+The demographic profile of Fox Chapel's zip code is majority residents between the ages of 18-64, majority Black residents (29%) and followed by Hispanic residents (25%). For the economic profile, children under 18 make up 21% of the poverty group, with 9.8% of persons below the poverty line. The median household income is $119,731 (±$10,256). The school may be over-performing because the majority of children under 18 do not experience poverty (79%), based on the data. This could boost student motivation and relieve them from financial stress. They may also have more financial access to school supplies or paid tutors. I would first ask the principal if the school offers accelerated learning programs that students could enroll in to improve their skills.
+
+The demographic of Germantown Elementary's zip code is also majority people ages 18-64. However, their majority is close, with Black being 27% and White being 26%. Hispanic residents make up the third-most race and ethnicity profile with 22%. For the economic profile, the median household income is $115,022 ±$8,583. 11% of children under 18 experience poverty, and there are 8.3% persons below the poverty line. Germantown Elementary may be under-performing because of the r
+
 
 
 ### Task 5: Evaluate the Model and Write the Pitch (7 points)
