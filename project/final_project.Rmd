@@ -9,6 +9,61 @@ library(tidyverse)
 
 ```
 
+# Trials, Errors and Lessons
+
+```{r}
+usm_schools <- c(
+  "Bowie State University",
+  "Coppin State University",
+  "Frostburg State University",
+  "Salisbury University",
+  "Towson University",
+  "University of Maryland Eastern Shore",
+  "University of Maryland, Baltimore",
+  "University of Maryland-Baltimore County",
+  "University of Maryland-College Park"
+)
+
+# Explicit IDs avoid depending on inconsistent campus names such as
+# "Main Campus", "Towson University", and "Coppin State University".
+primary_campus_ids <- c(
+  "162007001", "162283001", "162584001", "163851001", "164076001",
+  "163338001", "163259001", "163268001", "163286001"
+)
+
+campus_crime <- read_csv(
+  "https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/oncampus_crime_campus_year.csv",
+  col_types = cols(
+    campus_id = col_character(),
+    ope_id = col_character(),
+    zip = col_character(),
+    us_scope = col_character(),
+    older_than_latest_collection = col_character()
+  ),
+  show_col_types = FALSE
+)
+
+USMCrime <- campus_crime |>
+  filter(institution_name %in% usm_schools) |>
+  mutate(is_primary_campus = campus_id %in% primary_campus_ids) |>
+  arrange(institution_name, campus_id, crime_year)
+
+USMCrime_primary <- USMCrime |>
+  filter(is_primary_campus)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Tests I could run
 I think a bar chart would be effective in visualizing violent crime rates across USM campuses. The X-axis could contain the school names, whereas the X-axis shows violent crime rates (I'll have to look at the years of data I have to determine the maximum threshold). I could do year comparisons to analyze if the rates have changed-- maybe comparing a bar chart with 2015 data to a chart with 2024 data. 
 
