@@ -54,13 +54,26 @@ USMCrime_primary <- USMCrime |>
 
 In the block above, I filtered the USM schools (excluding University of Baltimore, UMGC and the University of Maryland Center for Environmental Science) down to their main campuses. The schools are called by their IDs to avoid confusion (e.g., if University of Maryland, Baltimore happens to be confused with UMBC). I also loaded crime data from 2015-2014. This was just a preliminary block to get all the data sorted. 
 
+```{r}
 
+USMCrime_primary |>
+  ggplot(aes(x = `source_enrollment_total`, y = `AGG_A`)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(x = "Universities' enrollment total", y = "Aggravated assault incidences",
+       title = "USM Student Enrollment vs. Aggravated assault incidences")
 
+```
 
+The issue with graph is that it doesn't label the different schools or years. A multiple linear regression graph would suit the data set better, but I'll wait until we go through an in-class example for that before I put it to the test. 
 
+Based on this graph alone, the data is also skewed because schools with 40,000+ enrolled students skew the linear regression line heavily to the right. There is also an extreme outlier, where one school had over 20 incidents of aggravated assault.
 
+This graph shows a cluster where schools with lower student enrollment report less aggravated assault incidents, excluding the outlier where one school had over 20 incidents. The data seems to cluster on the lower end of enrollment rtotal and incidents. However, since the schools with over 30,000 enrolled students did not report having more than 10 aggravated assault incidents. There is a weak correlation because the linear regression line does not move postively upward with higher enrollment and higher incidents of aggravated assault.
 
+Without the labels for schools and years, it's hard to visually determine which schools are driving the data to the right. It's also difficult to compare aggravated assault incidents this way because nothing is clearly labeled.
 
+The data is also hard to read because the graph doesn't calculate crime rates per 1,000 enrolled students. I also can't show the other violent crime categories (murder, rape, etc.) without a multiple linear regression line. How would I go about including that data into a graph for future tests?
 
 
 
