@@ -32,7 +32,7 @@ primary_campus_ids <- c(
 )
 
 campus_crime <- read_csv(
-  "https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/oncampus_crime_campus_year.csv",
+  "https://raw.githubusercontent.com/dwillis/jour405/refs/heads/main/data/usm_oncampus_crime_2015_2024.csv",
   col_types = cols(
     campus_id = col_character(),
     ope_id = col_character(),
@@ -52,7 +52,7 @@ USMCrime_primary <- USMCrime |>
   filter(is_primary_campus)
 ```
 
-
+In the block above, I filtered the USM schools (excluding University of Baltimore, UMGC and the University of Maryland Center for Environmental Science) down to their main campuses. The schools are called by their IDs to avoid confusion (e.g., if University of Maryland, Baltimore happens to be confused with UMBC). I also loaded crime data from 2015-2014. This was just a preliminary block to get all the data sorted. 
 
 
 
